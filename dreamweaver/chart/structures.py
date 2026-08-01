@@ -243,6 +243,10 @@ class Boundary:
     
     def to_dict(self) -> Dict[str, Union[float, int]]:
         return {"beat": self.beat, "judgeLine": self.judgeLine}
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'Boundary':
+        return cls(beat=data.get("beat", 0.0), judgeLine=data.get("judgeLine", 0))
 
 
 # ============================================================

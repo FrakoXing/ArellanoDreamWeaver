@@ -291,8 +291,8 @@ class MusicFeatureEncoder(nn.Module):
         Returns:
             [batch_size, seq_len', d_model]
         """
-        if x.dim() == 3 and x.size(-1) != self.cnn[0].in_channels:
-            # 假设输入是 [B, T, C]，需要转置
+        if x.dim() == 3 and x.size(1) != self.cnn[0].in_channels:
+            # 输入是 [B, T, C]，需要转置为 [B, C, T]
             x = x.transpose(1, 2)
         
         x = self.cnn(x)
@@ -581,7 +581,13 @@ class MultiTaskTransformer(nn.Module):
         
         # 如果有 BPM 特征，融合进来
         if bpm_features is not None:
-            bpm_emb = self.encode_bpm(bpm_features)
+            bpm_emb = self.encode_bpm(bpm_features)  # [B, 4] → [B, D] 或 [B, T_bpm, D]
+            # 展开到 music_repr 的时间维度 (CNN下采样后可能变小)
+            if bpm_emb.dim() == 2:
+                bpm_emb = bpm_emb.unsqueeze(1)  # [B, 1, D]
+            elif bpm_emb.size(1) != x.size(1):
+                bpm_emb = bpm_emb[:, :1]  # 只取第一帧，然后广播
+            bpm_emb = bpm_emb.expand(-1, x.size(1), -1)  # [B, T_m, D]
             x = x + bpm_emb  # 加性融合
         
         # === 扩展文本为全局条件 (广播到每个时间步) ===

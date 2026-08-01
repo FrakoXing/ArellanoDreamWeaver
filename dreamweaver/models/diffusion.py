@@ -165,43 +165,57 @@ class ResidualBlock(nn.Module):
 
 
 class CrossAttentionBlock(nn.Module):
-    """跨注意力块 (用于注入 Transformer 提取的条件)"""
-    
+    """跨注意力块 (兼容UNet [B,C,T] 输入)"""
     def __init__(self, query_dim: int, context_dim: int, heads: int = 8, dropout: float = 0.0):
         super().__init__()
-        
         self.heads = heads
         d_k = query_dim // heads
-        
+
         self.to_q = nn.Linear(query_dim, query_dim, bias=False)
         self.to_k = nn.Linear(context_dim, query_dim, bias=False)
         self.to_v = nn.Linear(context_dim, query_dim, bias=False)
-        
+
         self.to_out = nn.Sequential(
             nn.Linear(query_dim, query_dim),
             nn.Dropout(dropout)
         )
-        
         self.scale = d_k ** -0.5
-    
-    def forward(
-        self,
-        x: torch.Tensor,       # [B, T_q, D]
-        context: torch.Tensor  # [B, T_ctx, D_ctx]
-    ) -> torch.Tensor:
-        B, T, D = x.shape
-        
-        q = self.to_q(x).view(B, T, self.heads, -1).transpose(1, 2)
-        k = self.to_k(context).view(B, -1, self.heads, -1).transpose(1, 2)
-        v = self.to_v(context).view(B, -1, self.heads, -1).transpose(1, 2)
-        
-        attn = torch.matmul(q, k.transpose(-2, -1)) * self.scale
-        attn = F.softmax(attn, dim=-1)
-        
-        out = torch.matmul(attn, v)
-        out = out.transpose(1, 2).reshape(B, T, D)
-        
-        return self.to_out(out)
+
+    def forward(self, x: torch.Tensor, context: torch.Tensor) -> torch.Tensor:
+        print("CrossAttention x:", x.shape)
+        print("CrossAttention context:", context.shape)
+        # x: [B, C, T] UNet通道在前
+        B, C, T = x.shape
+
+        # 关键：转置为时序在前 [B, T, C]，适配Linear层
+        x_in = x.transpose(1, 2)  # [B, T, C]
+
+        # Q 投影
+        q = self.to_q(x_in)  # [B, T, query_dim]
+        q = q.view(B, T, self.heads, -1).transpose(1, 2)  # [B, heads, T, head_dim]
+
+        # K、V 投影（context 标准 [B, L, context_dim]）
+        k_ctx = self.to_k(context)
+        L_ctx = k_ctx.shape[1]
+        k = k_ctx.view(B, L_ctx, self.heads, -1).transpose(1, 2)
+
+        v_ctx = self.to_v(context)
+        v = v_ctx.view(B, L_ctx, self.heads, -1).transpose(1, 2)
+
+        # 注意力计算
+        attn_weight = torch.matmul(q, k.transpose(-1, -2)) * self.scale
+        attn_weight = F.softmax(attn_weight, dim=-1)
+        attn_out = torch.matmul(attn_weight, v)  # [B, heads, T, head_dim]
+
+        # 合并多头
+        attn_out = attn_out.transpose(1, 2).contiguous()  # [B, T, heads, head_dim]
+        attn_out = attn_out.view(B, T, C)
+
+        # 输出投影 + 还原通道在前格式 [B,C,T]
+        out = self.to_out(attn_out)
+        out = out.transpose(1, 2)
+        return out
+
 
 
 class Downsample(nn.Module):
@@ -304,17 +318,17 @@ class ConditionalUNet1D(nn.Module):
             ch_out = ch * mult
             
             res_blocks = nn.ModuleList([
-                ResidualBlock(
-                    ch_in if j == 0 else ch_out + ch_out,  # 有 skip connection
-                    ch_out,
-                    time_dim,
-                    cond_dim,
-                    config.dropout,
-                    use_condition=(cond_type != "crossattn"),
-                    condition_type=cond_type if cond_type != "crossattn" else "adagn"
-                )
-                for j in range(n_res + 1)  # +1 因为要处理 skip connection
-            ])
+    ResidualBlock(
+        (ch_in + ch_out) if j == 0 else ch_out,
+        ch_out,
+        time_dim,
+        cond_dim,
+        config.dropout,
+        use_condition=(cond_type != "crossattn"),
+        condition_type=cond_type if cond_type != "crossattn" else "adagn"
+    )
+    for j in range(n_res + 1)
+])
             self.up_blocks.append(res_blocks)
             
             resolution = 4096 // (2 ** (len(mults) - 1 - i))
@@ -384,11 +398,7 @@ class ConditionalUNet1D(nn.Module):
                 h = block(h, t_emb, condition if self.config.condition_type != "crossattn" else None)
             
             if cross_attn is not None:
-                # Cross-attention: h 是 [B,C,T], 需要 transpose 成 [B,T,C]
-                h_t = h.transpose(1, 2)
-                h_t = cross_attn(h_t, condition)
-                h = h_t.transpose(1, 2)
-            
+                h = cross_attn(h, condition)
             skips.append(h)
             
             if i < len(self.down_samples):
@@ -396,9 +406,7 @@ class ConditionalUNet1D(nn.Module):
         
         # === 中间层 ===
         h = self.mid_block1(h, t_emb, global_cond)
-        h_mid = h.transpose(1, 2)
-        h_mid = self.mid_cross_attn(h_mid, condition)
-        h = h_mid.transpose(1, 2)
+        h = self.mid_cross_attn(h, condition)
         h = self.mid_block2(h, t_emb, global_cond)
         
         # === 上采样 (Decoder) ===
@@ -411,9 +419,7 @@ class ConditionalUNet1D(nn.Module):
                 h = block(h, t_emb, global_cond if self.config.condition_type != "crossattn" else None)
                 
                 if j == 0 and cross_attn is not None:
-                    h_t = h.transpose(1, 2)
-                    h_t = cross_attn(h_t, condition)
-                    h = h_t.transpose(1, 2)
+                    h = cross_attn(h, condition)
             
             if i < len(self.up_samples):
                 h = self.up_samples[i](h)

@@ -1,49 +1,49 @@
-# ArellanoDreamWeaver - Ä¬ÈÏÑµÁ·ÅäÖÃ
+# ArellanoDreamWeaver - é»˜è®¤è®­ç»ƒé…ç½®
 
-# === Ä£ĞÍ²ÎÊı ===
+# === æ¨¡å‹å‚æ•° ===
 model:
   name: "DreamWeaver-v1"
   
-  # Transformer ²ÎÊı
+  # Transformer å‚æ•°
   transformer:
-    d_model: 512          # Ä£ĞÍÎ¬¶È
-    n_heads: 8            # ×¢ÒâÁ¦Í·Êı
-    n_layers: 6           # ±àÂëÆ÷²ãÊı
-    d_ff: 2048            # Ç°À¡ÍøÂçÎ¬¶È
-    dropout: 0.1          # Dropout ÂÊ
-    max_seq_len: 4096     # ×î´óĞòÁĞ³¤¶È
+    d_model: 512          # æ¨¡å‹ç»´åº¦
+    n_heads: 8            # æ³¨æ„åŠ›å¤´æ•°
+    n_layers: 6           # ç¼–ç å™¨å±‚æ•°
+    d_ff: 2048            # å‰é¦ˆç½‘ç»œç»´åº¦
+    dropout: 0.1          # Dropout ç‡
+    max_seq_len: 4096     # æœ€å¤§åºåˆ—é•¿åº¦
     
-  # Diffusion ²ÎÊı
+  # Diffusion å‚æ•°
   diffusion:
-    n_timesteps: 1000     # À©É¢²½Êı
-    beta_start: 0.0001    # Beta ÆğÊ¼Öµ
-    beta_end: 0.02        # Beta ½áÊøÖµ
-    schedule: "cosine"    # µ÷¶ÈÀàĞÍ: linear, cosine, sqrt
+    n_timesteps: 1000     # æ‰©æ•£æ­¥æ•°
+    beta_start: 0.0001    # Beta èµ·å§‹å€¼
+    beta_end: 0.02        # Beta ç»“æŸå€¼
+    schedule: "cosine"    # è°ƒåº¦ç±»å‹: linear, cosine, sqrt
   
-  # ¶àÈÎÎñÍ·
+  # å¤šä»»åŠ¡å¤´
   heads:
-    note_prediction:      # Òô·ûÔ¤²â
+    note_prediction:      # éŸ³ç¬¦é¢„æµ‹
       hidden_dim: 256
       num_classes: 4     # tap, hold, slide, none
-    bpm_prediction:       # BPM »Ø¹é
+    bpm_prediction:       # BPM å›å½’
       hidden_dim: 128
-    difficulty_assessment: # ÄÑ¶È·ÖÀà
+    difficulty_assessment: # éš¾åº¦åˆ†ç±»
       hidden_dim: 128
       num_classes: 6     # EZ/NM/HD/IN/AT/LEGACY
-    style_classification:  # ·ç¸ñ·ÖÀà
+    style_classification:  # é£æ ¼åˆ†ç±»
       hidden_dim: 128
       num_classes: 10    # pop, rock, electronic, classical, etc.
 
-# === ÑµÁ·²ÎÊı ===
+# === è®­ç»ƒå‚æ•° ===
 training:
   batch_size: 32
-  learning_rate: 1e-4
+  learning_rate: 0.0001
   weight_decay: 0.01
   epochs: 100
   warmup_epochs: 5
   gradient_clip: 1.0
   
-  # ËğÊ§È¨ÖØ
+  # æŸå¤±æƒé‡
   loss_weights:
     note_prediction: 1.0
     bpm_prediction: 0.5
@@ -54,33 +54,33 @@ training:
   optimizer: "adamw"
   scheduler: "cosine"
   
-# === LLM ²ÎÊı ===
+# === LLM å‚æ•° ===
 llm:
   provider: "openai"      # openai, local
   model: "gpt-4-turbo"
   temperature: 0.7
   max_tokens: 1024
   
-# === Êı¾İ²ÎÊı ===
+# === æ•°æ®å‚æ•° ===
 data:
   raw_dir: "data/raw"
   processed_dir: "data/processed"
   
-  # ÒôÆµÌØÕ÷
+  # éŸ³é¢‘ç‰¹å¾
   audio:
     sample_rate: 44100
     n_mels: 128
     hop_length: 512
     n_fft: 2048
   
-  # Æ×ÃæÌØÕ÷
+  # è°±é¢ç‰¹å¾
   chart:
     max_notes_per_segment: 64
-    time_quantization: 16   # Ê±¼äÁ¿»¯¾«¶È (1/16ÅÄ)
+    time_quantization: 16   # æ—¶é—´é‡åŒ–ç²¾åº¦ (1/16æ‹)
 
-# === ÈÕÖ¾ ===
+# === æ—¥å¿— ===
 logging:
   log_dir: "logs"
-  save_every: 10           # Ã¿ N ¸ö epoch ±£´æ
+  save_every: 10           # æ¯ N ä¸ª epoch ä¿å­˜
   tensorboard: true
   verbose: true

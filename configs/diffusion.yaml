@@ -1,7 +1,7 @@
-# ArellanoDreamWeaver - Diffusion ¹ı³ÌÅäÖÃ
+# ArellanoDreamWeaver - Diffusion è¿‡ç¨‹é…ç½®
 
 noise_schedule:
-  # Beta µ÷¶È
+  # Beta è°ƒåº¦
   type: "cosine"          # linear, cosine, sigmoid, sqrt_linear_cosine
   
   linear:
@@ -10,52 +10,52 @@ noise_schedule:
     n_steps: 1000
     
   cosine:
-    s: 0.008             # Ğ¡Æ«ÒÆ£¬±ÜÃâ beta=0
+    s: 0.008             # å°åç§»ï¼Œé¿å… beta=0
     
-  # ¿ÉÑ§Ï°µÄÔëÉùµ÷¶È (¿ÉÑ¡)
+  # å¯å­¦ä¹ çš„å™ªå£°è°ƒåº¦ (å¯é€‰)
   learnable: false
 
-# ²ÉÑùÅäÖÃ
+# é‡‡æ ·é…ç½®
 sampling:
   method: "ddim"          # ddpm, ddim, euler, heun, dpm++
   
   ddim:
-    n_steps: 50           # DDIM ²ÉÑù²½Êı (¿ÉÒÔÔ¶ÉÙÓÚÑµÁ·²½Êı)
-    eta: 0.0              # Ëæ»úĞÔ (0=È·¶¨ĞÔ, 1=ÍêÈ«Ëæ»ú)
+    n_steps: 50           # DDIM é‡‡æ ·æ­¥æ•° (å¯ä»¥è¿œå°‘äºè®­ç»ƒæ­¥æ•°)
+    eta: 0.0              # éšæœºæ€§ (0=ç¡®å®šæ€§, 1=å®Œå…¨éšæœº)
     discretization: "uniform"  # uniform, quad
     
-  # ·ÖÀàÆ÷-free Òıµ¼
+  # åˆ†ç±»å™¨-free å¼•å¯¼
   classifier_free_guidance:
     enabled: true
-    guidance_scale: 2.0   # Òıµ¼Ç¿¶È
-    p_uncond: 0.1         # ÑµÁ·Ê±¶ªÆúÌõ¼şµÄ¸ÅÂÊ
+    guidance_scale: 2.0   # å¼•å¯¼å¼ºåº¦
+    p_uncond: 0.1         # è®­ç»ƒæ—¶ä¸¢å¼ƒæ¡ä»¶çš„æ¦‚ç‡
 
-# Êı¾İ±íÊ¾
+# æ•°æ®è¡¨ç¤º
 data_representation:
-  # Æ×ÃæµÄÕÅÁ¿±íÊ¾
+  # è°±é¢çš„å¼ é‡è¡¨ç¤º
   format: "piano_roll_like"
   
   dimensions:
-    time: 4096            # Ê±¼ä²½
-    lanes: 8              # ¹ìµÀÊı (ÉÏÏÂ¸÷4¹ì)
-    features: 8           # ÌØÕ÷Î¬¶È [tap, hold, slide, position_x, is_fake, is_above, has_other, intensity]
+    time: 4096            # æ—¶é—´æ­¥
+    lanes: 8              # è½¨é“æ•° (ä¸Šä¸‹å„4è½¨)
+    features: 8           # ç‰¹å¾ç»´åº¦ [tap, hold, slide, position_x, is_fake, is_above, has_other, intensity]
   
-  # ¹éÒ»»¯
+  # å½’ä¸€åŒ–
   normalization:
     method: "standard"     # standard, minmax, none
     
-# ÑµÁ·¼¼ÇÉ
+# è®­ç»ƒæŠ€å·§
 training_tricks:
-  # EMA (Ö¸ÊıÒÆ¶¯Æ½¾ù) ÓÃÓÚÎÈ¶¨Éú³É
+  # EMA (æŒ‡æ•°ç§»åŠ¨å¹³å‡) ç”¨äºç¨³å®šç”Ÿæˆ
   ema:
     enabled: true
     decay: 0.9999
     update_after_step: 1000
     
-  # Ìİ¶ÈËõ·Å (»ìºÏ¾«¶ÈÑµÁ·)
+  # æ¢¯åº¦ç¼©æ”¾ (æ··åˆç²¾åº¦è®­ç»ƒ)
   amp:
     enabled: true
     init_scale: 65536.0
     
-  # x0 Ô¤²â vsÔëÉùÔ¤²â
+  # x0 é¢„æµ‹ vså™ªå£°é¢„æµ‹
   prediction_type: "epsilon"  # epsilon, x0, v_prediction

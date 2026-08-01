@@ -1,7 +1,7 @@
-# ArellanoDreamWeaver - Ä£ĞÍ¼Ü¹¹ÏêÏ¸ÅäÖÃ
+# ArellanoDreamWeaver - æ¨¡å‹æ¶æ„è¯¦ç»†é…ç½®
 
 architecture:
-  # === ÊäÈë±àÂëÆ÷ ===
+  # === è¾“å…¥ç¼–ç å™¨ ===
   encoders:
     music_feature_encoder:
       type: "CNN1D"
@@ -37,7 +37,7 @@ architecture:
       max_len: 4096
       d_model: 512
 
-  # === Transformer Ö÷¸É ===
+  # === Transformer ä¸»å¹² ===
   backbone:
     type: "MultiTaskTransformer"
     d_model: 512
@@ -48,12 +48,12 @@ architecture:
     dropout: 0.1
     activation: "gelu"
     
-    # ½»²æ×¢ÒâÁ¦ (ÈÚºÏ²»Í¬Ä£Ì¬)
+    # äº¤å‰æ³¨æ„åŠ› (èåˆä¸åŒæ¨¡æ€)
     cross_attention:
       enabled: true
       n_heads: 8
       
-    # ×ÔÊÊÓ¦²ã¹éÒ»»¯ (ÓÃÓÚÌõ¼ş×¢Èë)
+    # è‡ªé€‚åº”å±‚å½’ä¸€åŒ– (ç”¨äºæ¡ä»¶æ³¨å…¥)
     ada_ln:
       enabled: true
       conditioning_dim: 512
@@ -61,22 +61,22 @@ architecture:
   # === Diffusion U-Net ===
   unet:
     type: "ConditionalUNet"
-    in_channels: 64       # Æ×ÃæÌØÕ÷Î¬¶È
+    in_channels: 64       # è°±é¢ç‰¹å¾ç»´åº¦
     out_channels: 64
     channel_mults: [1, 2, 4, 8]
     n_res_blocks: 2
     attention_resolutions: [16, 8]
     
-    # Ê±¼ä²½Ç¶Èë
+    # æ—¶é—´æ­¥åµŒå…¥
     time_embed_dim: 256
     
-    # Ìõ¼şÇ¶Èë (À´×Ô Transformer)
+    # æ¡ä»¶åµŒå…¥ (æ¥è‡ª Transformer)
     condition_embed_dim: 512
     
-    # Ìõ¼ş×¢Èë·½Ê½: crossattn, adagn, fiLM
+    # æ¡ä»¶æ³¨å…¥æ–¹å¼: crossattn, adagn, fiLM
     condition_type: "crossattn"
 
-  # === Êä³öÍ· ===
+  # === è¾“å‡ºå¤´ ===
   output_heads:
     note_head:
       type: "ClassificationHead"
@@ -97,5 +97,5 @@ architecture:
       hidden_features: 256
       output_dim: 2       # [time, hold_time]
 
-# === ×Ü²ÎÊıÁ¿¹ÀËã ===
+# === æ€»å‚æ•°é‡ä¼°ç®— ===
 estimated_parameters: ~85M
