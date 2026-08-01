@@ -1,0 +1,86 @@
+# ArellanoDreamWeaver - 默认训练配置
+
+# === 模型参数 ===
+model:
+  name: "DreamWeaver-v1"
+  
+  # Transformer 参数
+  transformer:
+    d_model: 512          # 模型维度
+    n_heads: 8            # 注意力头数
+    n_layers: 6           # 编码器层数
+    d_ff: 2048            # 前馈网络维度
+    dropout: 0.1          # Dropout 率
+    max_seq_len: 4096     # 最大序列长度
+    
+  # Diffusion 参数
+  diffusion:
+    n_timesteps: 1000     # 扩散步数
+    beta_start: 0.0001    # Beta 起始值
+    beta_end: 0.02        # Beta 结束值
+    schedule: "cosine"    # 调度类型: linear, cosine, sqrt
+  
+  # 多任务头
+  heads:
+    note_prediction:      # 音符预测
+      hidden_dim: 256
+      num_classes: 4     # tap, hold, slide, none
+    bpm_prediction:       # BPM 回归
+      hidden_dim: 128
+    difficulty_assessment: # 难度分类
+      hidden_dim: 128
+      num_classes: 6     # EZ/NM/HD/IN/AT/LEGACY
+    style_classification:  # 风格分类
+      hidden_dim: 128
+      num_classes: 10    # pop, rock, electronic, classical, etc.
+
+# === 训练参数 ===
+training:
+  batch_size: 32
+  learning_rate: 1e-4
+  weight_decay: 0.01
+  epochs: 100
+  warmup_epochs: 5
+  gradient_clip: 1.0
+  
+  # 损失权重
+  loss_weights:
+    note_prediction: 1.0
+    bpm_prediction: 0.5
+    difficulty: 0.3
+    style: 0.2
+    diffusion: 2.0
+  
+  optimizer: "adamw"
+  scheduler: "cosine"
+  
+# === LLM 参数 ===
+llm:
+  provider: "openai"      # openai, local
+  model: "gpt-4-turbo"
+  temperature: 0.7
+  max_tokens: 1024
+  
+# === 数据参数 ===
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  
+  # 音频特征
+  audio:
+    sample_rate: 44100
+    n_mels: 128
+    hop_length: 512
+    n_fft: 2048
+  
+  # 谱面特征
+  chart:
+    max_notes_per_segment: 64
+    time_quantization: 16   # 时间量化精度 (1/16拍)
+
+# === 日志 ===
+logging:
+  log_dir: "logs"
+  save_every: 10           # 每 N 个 epoch 保存
+  tensorboard: true
+  verbose: true

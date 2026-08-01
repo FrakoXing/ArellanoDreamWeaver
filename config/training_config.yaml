@@ -1,0 +1,85 @@
+# ============================================
+# ArellanoDreamWeaver - Training Configuration
+# ============================================
+
+# This file contains training-specific hyperparameters
+# that override or extend settings.yaml
+
+experiment_name: "dreamweaver_v1_base"
+description: "Baseline multi-task model with LLM conditioning"
+
+# ===== Data =====
+data:
+  max_audio_duration: 180  # seconds (longer songs will be split)
+  segment_overlap: 2.0  # seconds overlap when splitting
+  
+  note_codec:
+    pos_bins: 9           # X position discretization
+    time_bins: 64         # Relative time delta bins
+    hold_bins: 32         # Hold duration bins
+    
+  event_normalization:
+    time_range: [0, 30]   # Event time range (beats)
+    value_range: [-1, 1]  # Parameter value range
+
+# ===== Model Specifics =====
+model:
+  encoder:
+    # CNN backbone
+    cnn_channels: [64, 128, 512]
+    kernel_sizes: [3, 3, 3]
+    
+  diffusion:
+    beta_schedule: "linear"  # linear, cosine, sqrt_linear
+    beta_start: 0.0001
+    beta_end: 0.02
+    # DDPM or DDIM for sampling
+    sampling_method: "ddim"
+
+# ===== Training Schedule =====
+training:
+  # Mixed precision
+  amp: true
+  
+  # Gradient accumulation for larger effective batch size
+  gradient_accumulation_steps: 4
+  
+  # Effective batch size = batch_size * accumulation * gpus
+  effective_batch_size: 32
+  
+  # EMA for model weights (stabilizes training)
+  ema:
+    enabled: true
+    decay: 0.9999
+
+# ===== Curriculum Learning =====
+curriculum:
+  enabled: true
+  stages:
+    - name: "easy_songs"
+      epochs: 20
+      filters:
+        max_difficulty: 4
+        max_note_density: 5
+        
+    - name: "medium_songs"  
+      epochs: 50
+      filters:
+        max_difficulty: 7
+        max_note_density: 10
+        
+    - name: "all_data"
+      epochs: 130
+      filters: null  # No filtering
+
+# ===== Evaluation =====
+evaluation:
+  eval_every: 5  # epochs
+  metrics:
+    - "note_accuracy"
+    - "event_mse"
+    - "bpm_error"
+    - "generation_quality"
+    
+  # Generation samples to save during evaluation
+  num_samples: 4

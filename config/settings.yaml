@@ -1,0 +1,152 @@
+# ============================================
+# ArellanoDreamWeaver Main Configuration
+# ============================================
+
+# ===== LLM Settings =====
+llm:
+  # Provider: "openai" or "local" (Ollama)
+  provider: "openai"
+  
+  openai:
+    api_key: "${OPENAI_API_KEY}"  # 从环境变量读取
+    model: "gpt-4o"
+    base_url: null  # 自定义endpoint (可选)
+    
+    # Generation parameters
+    temperature: 0.3
+    max_tokens: 2048
+    
+  local:
+    # Ollama configuration
+    endpoint: "http://localhost:11434"
+    model: "qwen2.5:14b"
+    
+    # Alternative vLLM/OpenAI-compatible endpoint
+    # endpoint: "http://localhost:8000/v1"
+    # model: "deepseek-chat"
+
+# ===== Model Architecture =====
+model:
+  # Shared Encoder (CNN + Transformer)
+  encoder:
+    n_mels: 128
+    hidden_dim: 512
+    num_layers: 6
+    num_heads: 8
+    dropout: 0.1
+    
+  # Note Decoder (Transformer)
+  note_decoder:
+    vocab_size: 100
+    num_layers: 6
+    max_seq_len: 2048
+    
+  # Event Diffusion Head
+  diffusion:
+    hidden_dim: 256
+    num_layers: 6
+    num_timesteps: 1000
+    max_events_per_segment: 64
+    event_param_dim: 5  # [t_start, t_end, v_start, v_end, curve_type]
+    
+  # Condition Injection
+  condition:
+    style_embedding_dim: 384  # Sentence-BERT default
+    use_adaln: true
+
+# ===== Audio Processing =====
+audio:
+  sample_rate: 44100
+  n_fft: 2048
+  hop_length: 512
+  n_mels: 128
+  
+  # Feature extraction
+  features:
+    mel_spectrogram: true
+    chroma: true
+    onset_strength: true
+    spectral_contrast: true
+
+# ===== Data Settings =====
+data:
+  data_dir: "./data/charts"
+  audio_dir: "./data/audio"
+  
+  # Dataset split
+  train_ratio: 0.9
+  val_ratio: 0.05
+  test_ratio: 0.05
+  
+  # Augmentation
+  augmentation:
+    pitch_shift: true
+    time_stretch: true
+    add_noise: true
+
+# ===== Training Settings =====
+training:
+  batch_size: 8
+  num_workers: 4
+  epochs: 200
+  
+  optimizer:
+    type: "adamw"
+    lr: 1e-4
+    weight_decay: 0.01
+    betas: [0.9, 0.999]
+    
+  scheduler:
+    type: "cosine"
+    warmup_steps: 500
+    
+  loss_weights:
+    note: 1.0
+    event: 1.0
+    bpm: 0.1
+    
+  gradient_clip: 1.0
+  
+  # Checkpointing
+  save_every: 10  # epochs
+  keep_last_n: 3
+
+# ===== Inference Settings =====
+inference:
+  note_generation:
+    max_length: 1024
+    temperature: 0.8
+    top_k: 50
+    top_p: 0.95
+    
+  event_sampling:
+    num_inference_steps: 50
+    guidance_scale: 2.0
+    
+  device: "auto"  # auto, cuda, cpu
+  dtype: "float16"  # float32, float16, bfloat16
+
+# ===== Server Settings =====
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 1
+  
+  cors:
+    enabled: true
+    origins: ["*"]
+
+# ===== Logging =====
+logging:
+  level: "INFO"
+  format: "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>"
+  file_log: "./logs/dreamweaver.log"
+  rotation: "100 MB"
+  retention: "7 days"
+
+# ===== Paths =====
+paths:
+  checkpoint_dir: "./checkpoints"
+  output_dir: "./output"
+  log_dir: "./logs"
+  cache_dir: "./cache"

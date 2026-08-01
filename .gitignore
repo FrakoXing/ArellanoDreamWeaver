@@ -1,0 +1,55 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# === 虚拟环境 ===
+venv/
+env/
+.venv/
+
+# === IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === 数据 (通常很大，不纳入版本控制) ===
+data/raw/*.mp3
+data/raw/*.wav
+data/raw/*.ogg
+data/processed/*.pt
+data/processed/*.npy
+data/datasets/*
+
+# === 模型权重 ===
+checkpoints/*.pth
+checkpoints/*.bin
+checkpoints/*.safetensors
+!checkpoints/.gitkeep
+
+# === 日志 ===
+logs/*
+!logs/.gitkeep
+
+# === 导出 ===
+exports/*
+!exports/.gitkeep
+
+# === 环境 & 密钥 (安全!) ===
+.env
+.env.local
+.env.production
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === HuggingFace Cache ===
+~/.cache/huggingface/

@@ -1,0 +1,61 @@
+# ArellanoDreamWeaver - Diffusion 过程配置
+
+noise_schedule:
+  # Beta 调度
+  type: "cosine"          # linear, cosine, sigmoid, sqrt_linear_cosine
+  
+  linear:
+    beta_start: 0.0001
+    beta_end: 0.02
+    n_steps: 1000
+    
+  cosine:
+    s: 0.008             # 小偏移，避免 beta=0
+    
+  # 可学习的噪声调度 (可选)
+  learnable: false
+
+# 采样配置
+sampling:
+  method: "ddim"          # ddpm, ddim, euler, heun, dpm++
+  
+  ddim:
+    n_steps: 50           # DDIM 采样步数 (可以远少于训练步数)
+    eta: 0.0              # 随机性 (0=确定性, 1=完全随机)
+    discretization: "uniform"  # uniform, quad
+    
+  # 分类器-free 引导
+  classifier_free_guidance:
+    enabled: true
+    guidance_scale: 2.0   # 引导强度
+    p_uncond: 0.1         # 训练时丢弃条件的概率
+
+# 数据表示
+data_representation:
+  # 谱面的张量表示
+  format: "piano_roll_like"
+  
+  dimensions:
+    time: 4096            # 时间步
+    lanes: 8              # 轨道数 (上下各4轨)
+    features: 8           # 特征维度 [tap, hold, slide, position_x, is_fake, is_above, has_other, intensity]
+  
+  # 归一化
+  normalization:
+    method: "standard"     # standard, minmax, none
+    
+# 训练技巧
+training_tricks:
+  # EMA (指数移动平均) 用于稳定生成
+  ema:
+    enabled: true
+    decay: 0.9999
+    update_after_step: 1000
+    
+  # 梯度缩放 (混合精度训练)
+  amp:
+    enabled: true
+    init_scale: 65536.0
+    
+  # x0 预测 vs噪声预测
+  prediction_type: "epsilon"  # epsilon, x0, v_prediction

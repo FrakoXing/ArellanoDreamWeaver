@@ -1,0 +1,46 @@
+# ArellanoDreamWeaver 依赖
+# AI 辅助制谱模型 - 多任务 Transformer + Diffusion
+
+# === 核心深度学习 ===
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+
+# === Transformer & Attention ===
+einops>=0.6.1          # 张量操作简化
+#flash-attn>=2.0.0      # 高效注意力 (可选,需要CUDA)
+
+# === Diffusion ===
+diffusers>=0.21.0      # Diffusion 工具库
+accelerate>=0.24.0     # 分布式训练加速
+
+# === 音频处理 ===
+librosa>=0.10.0        # 音频特征提取
+soundfile>=0.12.1      # 音频读写
+pydub>=0.25.1          # 音频格式转换
+
+# === LLM 接口 ===
+openai>=1.6.0          # OpenAI GPT API
+tiktoken>=0.5.2       # Token 计数
+transformers>=4.36.0   # HuggingFace Transformers (本地模型)
+sentence-transformers>=2.2.0  # 句子嵌入
+
+# === 数据处理 ===
+pandas>=2.1.0          # 数据分析
+scikit-learn>=1.3.0    # 工具函数
+tqdm>=4.66.0           # 进度条
+
+# === 配置管理 ===
+pyyaml>=6.0.1          # YAML 配置
+omegaconf>=2.3.0       # 高级配置管理
+hydra-core>=1.3.0      # 多配置组合
+
+# === 可视化 ===
+matplotlib>=3.8.0      # 绘图
+seaborn>=0.13.0        # 统计可视化
+plotly>=5.18.0         # 交互式图表
+
+# === 工具 ===
+python-dotenv>=1.0.0   # 环境变量管理
+rich>=13.7.0           # 终端美化输出
+tensorboard>=2.15.0    # 训练监控
