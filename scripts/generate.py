@@ -27,6 +27,14 @@ from dreamweaver.chart.structures import (
     chart_to_tensor, tensor_to_chart
 )
 
+# 尝试导入音频处理器
+try:
+    from src.data.audio_processor import AudioProcessor
+    AUDIO_PROCESSOR_AVAILABLE = True
+except ImportError:
+    AUDIO_PROCESSOR_AVAILABLE = False
+    print("[WARN] 音频处理器不可用，将使用模拟音频特征。确保 librosa 已安装: pip install librosa")
+
 
 class DreamWeaverGenerator:
     """
@@ -70,8 +78,8 @@ class DreamWeaverGenerator:
                 "max_seq_len": 4096
             },
             "diffusion": {
-                "in_channels": 64,
-                "out_channels": 64,
+                "in_channels": 8,
+                "out_channels": 8,
                 "n_timesteps": 1000,
                 "schedule": "cosine"
             },
@@ -138,13 +146,57 @@ class DreamWeaverGenerator:
         
         checkpoint = torch.load(checkpoint_path, map_location=self.device)
         
+        # 加载 Transformer
         if "transformer_state_dict" in checkpoint:
             self.transformer.load_state_dict(checkpoint["transformer_state_dict"])
             print(f"   ✅ 已加载 Transformer 权重")
         
-        if "diffusion_state_dict" in checkpoint:
-            self.diffusion_model.load_state_dict(checkpoint["diffusion_state_dict"])
-            print(f"   ✅ 已加载 Diffusion 权重")
+        # 加载 Diffusion (UNet)
+        # 训练脚本保存的是 unet_state_dict (UNet 原始权重)
+        # generate.py 的 ChartDiffusionModel 内部持有 unet 属性
+        diffusion_key = None
+        for key in ["unet_state_dict", "diffusion_state_dict", "model_state_dict"]:
+            if key in checkpoint:
+                diffusion_key = key
+                break
+        
+        if diffusion_key:
+            state_dict = checkpoint[diffusion_key]
+            
+            # 检查是否需要添加 "unet." 前缀
+            # 训练保存的是裸 UNet 权重 (如 "down_blocks.0.0.norm1.weight")
+            # ChartDiffusionModel 期望的是 "unet.down_blocks.0.0.norm1.weight"
+            first_key = next(iter(state_dict))
+            if not first_key.startswith("unet.") and not first_key.startswith("betas"):
+                # 需要重新映射 key
+                new_state_dict = {}
+                for k, v in state_dict.items():
+                    new_state_dict[f"unet.{k}"] = v
+                state_dict = new_state_dict
+            
+            # 使用 strict=False 因为 noise scheduler 的 buffer 不在 checkpoint 中
+            missing, unexpected = self.diffusion_model.load_state_dict(state_dict, strict=False)
+            
+            # 过滤掉 noise scheduler 相关的 missing keys (这些是正常的)
+            scheduler_keys = {"betas", "alphas", "alphas_cumprod", "alphas_cumprod_prev",
+                            "sqrt_alphas_cumprod", "sqrt_one_minus_alphas_cumprod",
+                            "sqrt_recip_alphas", "posterior_variance",
+                            "posterior_log_variance_clipped", "posterior_mean_coef1",
+                            "posterior_mean_coef2"}
+            real_missing = [k for k in missing if k not in scheduler_keys]
+            
+            if real_missing:
+                print(f"   ⚠️  Diffusion 模型有 {len(real_missing)} 个缺失 key")
+            if unexpected:
+                print(f"   ⚠️  Diffusion 模型有 {len(unexpected)} 个多余 key")
+            if not real_missing and not unexpected:
+                print(f"   ✅ 已加载 Diffusion 权重 (来源: {diffusion_key})")
+            else:
+                print(f"   ✅ 已加载 Diffusion 权重 (来源: {diffusion_key}, 非严格模式)")
+        
+        # 加载 epoch 信息 (如果有)
+        if "epoch" in checkpoint:
+            print(f"   📅 检查点 epoch: {checkpoint['epoch']}")
         
         # 设置为评估模式
         self.transformer.eval()
@@ -215,6 +267,7 @@ class DreamWeaverGenerator:
     def generate(
         self,
         prompt: str,
+        audio_path: Optional[str] = None,
         audio_features: Optional[torch.Tensor] = None,
         num_samples: int = 1,
         seed: Optional[int] = None,
@@ -225,7 +278,8 @@ class DreamWeaverGenerator:
         
         Args:
             prompt: 用户自然语言提示词
-            audio_features: 可选的音频特征 (如果提供，将增强生成质量)
+            audio_path: 音频文件路径 (如果提供，将提取真实音频特征)
+            audio_features: 可选的预提取音频特征 (如果提供，将直接使用)
             num_samples: 生成样本数 (目前只返回第一个)
             seed: 随机种子 (用于可复现性)
             progress_callback: 进度回调函数
@@ -266,16 +320,34 @@ class DreamWeaverGenerator:
             print("\n⚠️  未加载训练好的模型，使用演示生成模式...")
             return self._demo_generate(prompt, params)
         
-        # === Step 3: 准备音频特征 (可选) ===
+        # === Step 3: 准备音频特征 ===
+        print(f"\n🎵 Step 3: 准备音频特征...")
+        
         if audio_features is None:
-            # 生成基于条件的伪音频特征
-            audio_seq_len = 1024
-            audio_features = self._generate_mock_audio_features(
-                audio_seq_len, 
-                bpm=params.bpm or 120,
-                genre=str(params.genre.value if params.genre else "electronic")
-            )
-            print(f"   生成模拟音频特征: {audio_features.shape}")
+            if audio_path is not None and AUDIO_PROCESSOR_AVAILABLE:
+                # 从真实音频提取特征
+                print(f"   加载音频: {audio_path}")
+                audio_processor = AudioProcessor(device=str(self.device))
+                
+                # 估算音频时长 (基于 BPM 和默认小节数)
+                duration = params.duration if hasattr(params, 'duration') and params.duration else 180.0
+                audio_features = audio_processor.align_to_chart(
+                    audio_path,
+                    chart_duration=duration,
+                    target_steps=1024
+                ).unsqueeze(0).to(self.device)
+                print(f"   ✅ 已提取真实音频特征: {audio_features.shape}")
+            else:
+                # 生成基于条件的伪音频特征
+                if audio_path and not AUDIO_PROCESSOR_AVAILABLE:
+                    print(f"   [WARN] 音频处理器不可用，使用模拟特征")
+                audio_seq_len = 1024
+                audio_features = self._generate_mock_audio_features(
+                    audio_seq_len, 
+                    bpm=params.bpm or 120,
+                    genre=str(params.genre.value if params.genre else "electronic")
+                )
+                print(f"   生成模拟音频特征: {audio_features.shape}")
         
         # === Step 4: Transformer 提取高级特征 ===
         print(f"\n🧠 Step 3: 特征提取 (Transformer)...")
@@ -498,19 +570,24 @@ def main():
   # 基本用法
   python generate.py --prompt "生成一段 128 BPM 的电子音乐谱面"
   
+  # 加载音频文件生成 (推荐，生成与音乐匹配的谱面)
+  python generate.py --audio song.mp3 --checkpoint logs/best_model.pth
+  
+  # 音频 + 提示词 (更精确控制)
+  python generate.py --prompt "电子音乐，高难度" --audio song.mp3 --checkpoint logs/best_model.pth
+  
   # 指定输出文件
   python generate.py --prompt "制作一首悲伤的钢琴曲" --output my_chart.json
-  
-  # 使用预训练模型
-  python generate.py --prompt "重金属风格，困难难度" --checkpoint checkpoints/best_model.pth
   
   # 可复现的生成
   python generate.py --prompt "流行歌曲" --seed 42
         """
     )
     
-    parser.add_argument("--prompt", "-p", type=str, required=True,
-                        help="制谱提示词 (自然语言)")
+    parser.add_argument("--prompt", "-p", type=str, default="生成一段谱面",
+                        help="制谱提示词 (自然语言，默认: '生成一段谱面')")
+    parser.add_argument("--audio", "-a", type=str, default=None,
+                        help="音频文件路径 (mp3/wav/flac/ogg)，用于提取真实音频特征")
     parser.add_argument("--output", "-o", type=str, default="generated_chart.json",
                         help="输出 JSON 文件路径")
     parser.add_argument("--checkpoint", "-c", type=str, default=None,
@@ -540,6 +617,7 @@ def main():
     # 生成谱面
     chart = generator.generate(
         prompt=args.prompt,
+        audio_path=args.audio,
         num_samples=args.samples,
         seed=args.seed
     )

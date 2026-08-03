@@ -1,4 +1,4 @@
-# ArellanoDreamWeaver - 默认训练配置
+# ArellanoDreamWeaver - 默认训练配置 (更新版)
 
 # === 模型参数 ===
 model:
@@ -36,7 +36,7 @@ model:
 
 # === 训练参数 ===
 training:
-  batch_size: 8
+  batch_size: 32
   learning_rate: 0.0001
   weight_decay: 0.01
   epochs: 100
@@ -54,6 +54,11 @@ training:
   optimizer: "adamw"
   scheduler: "cosine"
   
+  # 数据加载
+  use_real_audio: true          # 使用真实音频 (False 则使用随机噪声)
+  cache_audio_features: true    # 缓存音频特征到内存
+  demo_samples: 32              # 演示数据集大小
+  
 # === LLM 参数 ===
 llm:
   provider: "openai"      # openai, local
@@ -65,18 +70,23 @@ llm:
 data:
   raw_dir: "data/raw"
   processed_dir: "data/processed"
+  audio_dir: "data/audio"           # 音频文件目录
+  cache_dir: "data/cache"           # 音频特征缓存目录
+  max_seq_len: 4096                 # 最大序列长度
   
   # 音频特征
   audio:
-    sample_rate: 44100
-    n_mels: 128
-    hop_length: 512
-    n_fft: 2048
+    sample_rate: 22050              # 采样率 (Hz)
+    n_mels: 128                     # 梅尔滤波器数量
+    hop_length: 512                 # 帧移
+    n_fft: 2048                     # FFT 窗口大小
+    feature_dim: 128                # 特征维度
   
   # 谱面特征
   chart:
     max_notes_per_segment: 64
-    time_quantization: 16   # 时间量化精度 (1/16拍)
+    time_quantization: 16           # 时间量化精度 (1/16拍)
+    feature_dim: 8                  # 特征维度
 
 # === 日志 ===
 logging:

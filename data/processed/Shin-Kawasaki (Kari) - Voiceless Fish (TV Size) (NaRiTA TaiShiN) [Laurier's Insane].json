@@ -2,359 +2,399 @@
   "judgeSegments": [
     {
       "segmentEvents": {
-        "MoveX": [
-          {
-            "beat": 0.0,
-            "value": 0.0
-          },
-          {
-            "beat": 154.945953,
-            "value": -10.0
-          }
-        ],
-        "MoveY": [
-          {
-            "beat": 0.0,
-            "value": 0.0
-          },
-          {
-            "beat": 5.35135126,
-            "value": -10.0
-          },
-          {
-            "beat": 6.1621623,
-            "value": -8.0
-          },
-          {
-            "beat": 31.1351357,
-            "value": -11.0
-          },
-          {
-            "beat": 33.72973,
-            "value": -11.0
-          },
-          {
-            "beat": 36.3243256,
-            "value": -11.0
-          },
-          {
-            "beat": 38.91892,
-            "value": -11.0
-          },
-          {
-            "beat": 41.5135155,
-            "value": -11.0
-          },
-          {
-            "beat": 42.81081,
-            "value": -11.0
-          },
-          {
-            "beat": 44.10811,
-            "value": -11.0
-          },
-          {
-            "beat": 45.405407,
-            "value": -11.0
-          },
-          {
-            "beat": 46.7027054,
-            "value": -11.0
-          },
-          {
-            "beat": 48.0,
-            "value": -11.0
-          },
-          {
-            "beat": 49.2973,
-            "value": -11.0
-          },
-          {
-            "beat": 50.5945969,
-            "value": -11.0
-          },
-          {
-            "beat": 51.89189,
-            "value": -11.0
-          },
-          {
-            "beat": 53.18919,
-            "value": -11.0
-          },
-          {
-            "beat": 54.48649,
-            "value": -11.0
-          },
-          {
-            "beat": 55.7837868,
-            "value": -11.0
-          },
-          {
-            "beat": 57.08108,
-            "value": -11.0
-          },
-          {
-            "beat": 58.37838,
-            "value": -11.0
-          },
-          {
-            "beat": 59.67568,
-            "value": -11.0
-          },
-          {
-            "beat": 60.9729729,
-            "value": -11.0
-          },
-          {
-            "beat": 62.27027,
-            "value": -11.0
-          },
-          {
-            "beat": 64.86487,
-            "value": -11.0
-          },
-          {
-            "beat": 67.45946,
-            "value": -11.0
-          },
-          {
-            "beat": 70.0540543,
-            "value": -11.0
-          },
-          {
-            "beat": 72.64865,
-            "value": -11.0
-          },
-          {
-            "beat": 74.91892,
-            "value": -11.0
-          },
-          {
-            "beat": 77.83784,
-            "value": -11.0
-          },
-          {
-            "beat": 80.4324341,
-            "value": -11.0
-          },
-          {
-            "beat": 83.02703,
-            "value": -10.0
-          },
-          {
-            "beat": 90.8108139,
-            "value": 0.0
-          },
-          {
-            "beat": 93.40541,
-            "value": -11.0
-          },
-          {
-            "beat": 94.7027054,
-            "value": -11.0
-          },
-          {
-            "beat": 96.0,
-            "value": -11.0
-          },
-          {
-            "beat": 97.2973,
-            "value": -11.0
-          },
-          {
-            "beat": 98.5946,
-            "value": -11.0
-          },
-          {
-            "beat": 99.89189,
-            "value": -11.0
-          },
-          {
-            "beat": 101.189194,
-            "value": -11.0
-          },
-          {
-            "beat": 102.486488,
-            "value": -11.0
-          },
-          {
-            "beat": 145.2973,
-            "value": -10.0
-          }
-        ],
-        "Rotate": [
-          {
-            "beat": 0.0,
-            "value": 0.0
-          },
-          {
-            "beat": 4.5405407,
-            "value": 0.0
-          },
-          {
-            "beat": 5.18918943,
-            "value": -90.0
-          },
-          {
-            "beat": 5.35135126,
-            "value": -45.0
-          },
-          {
-            "beat": 20.7567577,
-            "value": 3.0
-          },
-          {
-            "beat": 23.3610821,
-            "value": -3.0
-          },
-          {
-            "beat": 25.9459457,
-            "value": 3.0
-          },
-          {
-            "beat": 28.54054,
-            "value": -3.0
-          },
-          {
-            "beat": 41.5135155,
-            "value": -3.0
-          },
-          {
-            "beat": 42.81081,
-            "value": 3.0
-          },
-          {
-            "beat": 44.10811,
-            "value": -3.0
-          },
-          {
-            "beat": 45.405407,
-            "value": 3.0
-          },
-          {
-            "beat": 46.7027054,
-            "value": -3.0
-          },
-          {
-            "beat": 48.0,
-            "value": 3.0
-          },
-          {
-            "beat": 49.2973,
-            "value": -3.0
-          },
-          {
-            "beat": 50.5945969,
-            "value": 3.0
-          },
-          {
-            "beat": 60.82054,
-            "value": -180.0
-          },
-          {
-            "beat": 83.02703,
-            "value": -180.0
-          },
-          {
-            "beat": 155.027039,
-            "value": -1.0
-          }
-        ],
-        "Alpha": [
-          {
-            "beat": 0.0,
-            "value": 0.0
-          },
-          {
-            "beat": 3.56756759,
-            "value": 0.4
-          },
-          {
-            "beat": 4.5405407,
-            "value": 0.4
-          },
-          {
-            "beat": 5.18918943,
-            "value": 0.4
-          },
-          {
-            "beat": 6.1621623,
-            "value": 0.4
-          },
-          {
-            "beat": 8.756757,
-            "value": 0.4
-          },
-          {
-            "beat": 10.0540543,
-            "value": 0.4
-          },
-          {
-            "beat": 10.3783789,
-            "value": 0.4
-          },
-          {
-            "beat": 12.6486492,
-            "value": 0.4
-          },
-          {
-            "beat": 12.9729729,
-            "value": 0.4
-          },
-          {
-            "beat": 15.2432432,
-            "value": 0.4
-          },
-          {
-            "beat": 15.5675678,
-            "value": 0.4
-          },
-          {
-            "beat": 51.2432442,
-            "value": 0.1
-          },
-          {
-            "beat": 51.3243256,
-            "value": 0.1
-          },
-          {
-            "beat": 51.405407,
-            "value": 0.1
-          },
-          {
-            "beat": 51.56757,
-            "value": 0.1
-          },
-          {
-            "beat": 93.0810852,
-            "value": 0.2
-          },
-          {
-            "beat": 93.40541,
-            "value": 0.2
-          },
-          {
-            "beat": 145.2973,
-            "value": 1.0
-          }
-        ],
-        "Length": [
-          {
-            "beat": 0.0,
-            "value": 1.0
-          },
-          {
-            "beat": 6.1621623,
-            "value": 8.0
-          }
-        ]
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 11.4976,
+          "holdTime": 0.6,
+          "positionX": 0.859375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 12.9984,
+          "holdTime": 0.3,
+          "positionX": 0.464844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 14.0,
+          "holdTime": 0.3,
+          "positionX": 0.046875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 14.9984,
+          "holdTime": 0.0,
+          "positionX": -0.339844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 15.4976,
+          "holdTime": 0.0,
+          "positionX": -0.417969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 16.0,
+          "holdTime": 0.3,
+          "positionX": -0.222656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 20.9984,
+          "holdTime": 0.3,
+          "positionX": 0.625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 22.0,
+          "holdTime": 0.0,
+          "positionX": 0.183594,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 22.9984,
+          "holdTime": 0.3,
+          "positionX": 0.578125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 8.0,
+          "holdTime": 0.6,
+          "positionX": -0.625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 9.4976,
+          "holdTime": 0.0,
+          "positionX": 0.007812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 10.0,
+          "holdTime": 0.3,
+          "positionX": 0.238281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 10.9984,
+          "holdTime": 0.0,
+          "positionX": 0.714844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 16.9984,
+          "holdTime": 0.3,
+          "positionX": -0.019531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 18.0,
+          "holdTime": 0.6,
+          "positionX": 0.210938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 19.4976,
+          "holdTime": 0.0,
+          "positionX": 0.871094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 20.0,
+          "holdTime": 0.3,
+          "positionX": 0.777344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 24.0,
+          "holdTime": 0.6,
+          "positionX": 0.132812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 25.4976,
+          "holdTime": 0.0,
+          "positionX": -0.511719,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 26.0,
+          "holdTime": 0.3,
+          "positionX": -0.742188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 26.9984,
+          "holdTime": 0.3,
+          "positionX": -0.617188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 32.4992,
+          "holdTime": 0.0,
+          "positionX": 0.835938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 32.9984,
+          "holdTime": 0.3,
+          "positionX": 0.855469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 34.0,
+          "holdTime": 0.3,
+          "positionX": 0.644531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 34.9984,
+          "holdTime": 0.3,
+          "positionX": 0.5,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 36.0,
+          "holdTime": 0.0,
+          "positionX": 0.035156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 36.4992,
+          "holdTime": 0.0,
+          "positionX": -0.230469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 36.9984,
+          "holdTime": 0.3,
+          "positionX": -0.472656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 38.0,
+          "holdTime": 0.0,
+          "positionX": -0.484375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 28.0,
+          "holdTime": 0.6,
+          "positionX": -0.351562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 29.4976,
+          "holdTime": 0.0,
+          "positionX": 0.03125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 30.0,
+          "holdTime": 0.45,
+          "positionX": 0.21875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 30.9984,
+          "holdTime": 0.3,
+          "positionX": 0.625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 32.0,
+          "holdTime": 0.0,
+          "positionX": 0.976562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 38.9984,
+          "holdTime": 0.3,
+          "positionX": -0.429688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
       },
       "notesAbove": [
         {
           "type": 0,
-          "time": 20.7567577,
+          "time": 44.0,
           "holdTime": 0.0,
-          "positionX": 0.0,
+          "positionX": 0.449219,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -362,9 +402,19 @@
         },
         {
           "type": 0,
-          "time": 23.3513527,
+          "time": 44.4992,
           "holdTime": 0.0,
-          "positionX": 0.0,
+          "positionX": 0.128906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 44.9984,
+          "holdTime": 0.4,
+          "positionX": -0.230469,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -372,9 +422,29 @@
         },
         {
           "type": 0,
-          "time": 25.9459457,
+          "time": 46.0,
           "holdTime": 0.0,
-          "positionX": 0.0,
+          "positionX": -0.828125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 46.4992,
+          "holdTime": 0.8,
+          "positionX": -0.988281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 50.9984,
+          "holdTime": 0.4,
+          "positionX": -0.398438,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -382,339 +452,164 @@
         },
         {
           "type": 0,
-          "time": 28.54054,
+          "time": 51.7472,
           "holdTime": 0.0,
-          "positionX": 0.0,
+          "positionX": -0.796875,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 0,
-          "time": 31.1351357,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 31.1351357,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 33.72973,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 33.72973,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 36.3243256,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 36.3243256,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 38.91892,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 38.91892,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 41.5135155,
-          "holdTime": 0.97297287,
-          "positionX": 0.5,
+          "type": 2,
+          "time": 52.0,
+          "holdTime": 0.4,
+          "positionX": -0.796875,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 42.81081,
-          "holdTime": 0.9729767,
-          "positionX": -0.5,
+          "type": 2,
+          "time": 52.9984,
+          "holdTime": 0.4,
+          "positionX": -0.410156,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 44.10811,
-          "holdTime": 0.97297287,
-          "positionX": 0.5,
+          "type": 2,
+          "time": 54.0,
+          "holdTime": 0.8,
+          "positionX": 0.144531,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
-        },
+        }
+      ],
+      "notesBelow": [
         {
-          "type": 1,
-          "time": 45.405407,
-          "holdTime": 0.97297287,
-          "positionX": -0.5,
+          "type": 2,
+          "time": 40.0,
+          "holdTime": 0.8,
+          "positionX": -0.0625,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 46.7027054,
-          "holdTime": 0.6486473,
-          "positionX": 0.5,
+          "type": 0,
+          "time": 41.4976,
+          "holdTime": 0.0,
+          "positionX": 0.785156,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
         },
         {
-          "type": 1,
+          "type": 2,
+          "time": 42.0,
+          "holdTime": 0.4,
+          "positionX": 0.945312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 42.7488,
+          "holdTime": 0.0,
+          "positionX": 0.804688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 42.9984,
+          "holdTime": 0.4,
+          "positionX": 0.804688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
           "time": 48.0,
-          "holdTime": 0.6486511,
-          "positionX": -0.5,
+          "holdTime": 0.4,
+          "positionX": -0.613281,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 49.2973,
-          "holdTime": 0.6486473,
-          "positionX": 0.5,
+          "type": 0,
+          "time": 48.9984,
+          "holdTime": 0.0,
+          "positionX": -0.21875,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 50.5945969,
-          "holdTime": 0.6486473,
-          "positionX": -0.5,
+          "type": 0,
+          "time": 49.4976,
+          "holdTime": 0.0,
+          "positionX": 0.105469,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 51.89189,
-          "holdTime": 0.6486511,
-          "positionX": 0.5,
+          "type": 0,
+          "time": 50.0,
+          "holdTime": 0.0,
+          "positionX": -0.214844,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 51.89189,
-          "holdTime": 0.6486511,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 53.18919,
-          "holdTime": 0.6486511,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 53.18919,
-          "holdTime": 0.6486511,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 54.48649,
-          "holdTime": 0.6486473,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 54.48649,
-          "holdTime": 0.6486473,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 55.7837868,
-          "holdTime": 0.6486473,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 55.7837868,
-          "holdTime": 0.6486473,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 57.08108,
-          "holdTime": 0.486488342,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
         },
         {
-          "type": 1,
-          "time": 57.7297325,
-          "holdTime": 0.162158966,
-          "positionX": 0.5,
+          "type": 0,
+          "time": 50.4992,
+          "holdTime": 0.0,
+          "positionX": -0.109375,
           "isFakeNote": false,
           "offset": 0.0,
-          "isAbove": true,
+          "isAbove": false,
           "hasOther": false
-        },
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
         {
-          "type": 1,
-          "time": 58.0540543,
-          "holdTime": 0.162162781,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 58.37838,
-          "holdTime": 0.486488342,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 59.0270271,
-          "holdTime": 0.162162781,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 59.3513527,
-          "holdTime": 0.162162781,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 59.67568,
-          "holdTime": 0.486484528,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 60.3243256,
-          "holdTime": 0.162162781,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 60.64865,
-          "holdTime": 0.162162781,
-          "positionX": -0.25,
+          "type": 0,
+          "time": 59.4976,
+          "holdTime": 0.0,
+          "positionX": -0.96875,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -722,9 +617,9 @@
         },
         {
           "type": 2,
-          "time": 62.27027,
-          "holdTime": 0.0,
-          "positionX": -0.75,
+          "time": 60.0,
+          "holdTime": 0.4,
+          "positionX": -0.621094,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -732,209 +627,39 @@
         },
         {
           "type": 2,
-          "time": 62.3513527,
-          "holdTime": 0.0,
-          "positionX": -0.5,
+          "time": 60.9984,
+          "holdTime": 0.4,
+          "positionX": -0.097656,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 2,
-          "time": 62.4324341,
+          "type": 0,
+          "time": 61.7472,
           "holdTime": 0.0,
-          "positionX": -0.25,
+          "positionX": 0.019531,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 2,
-          "time": 62.5135155,
+          "type": 0,
+          "time": 62.0,
           "holdTime": 0.0,
-          "positionX": 0.0,
+          "positionX": 0.019531,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 2,
-          "time": 62.75676,
+          "type": 0,
+          "time": 65.4976,
           "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 62.83784,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 62.9189224,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 63.0,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 63.2432442,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 63.3243256,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 63.405407,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 63.48649,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 64.86487,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 64.9459457,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.02703,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.10811,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.35136,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.4324341,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.51351,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.5946,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.83784,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 65.91892,
-          "holdTime": 0.0,
-          "positionX": 0.5,
+          "positionX": -0.855469,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -943,2668 +668,38 @@
         {
           "type": 2,
           "time": 66.0,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 66.0810852,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 67.45946,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 67.54054,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 67.62162,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 67.7027054,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 67.9459457,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.02703,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.10811,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.18919,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.4324341,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.51351,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.5946,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 68.6756744,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.0540543,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.13514,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.21622,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.2973,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.54054,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.62162,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.7027054,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 70.78378,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 71.02703,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 71.10811,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 71.18919,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 71.27027,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 71.51351,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 71.6756744,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 72.64865,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 72.72973,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 72.8108139,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 72.89189,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.13514,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.21622,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.2973,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.37838,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.62162,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.7027054,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.78378,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 73.86487,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.24325,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.3243256,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.40541,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.48649,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.72973,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.8108139,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.89189,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 75.97298,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 76.21622,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 76.2973,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 76.37838,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 76.459465,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 77.83784,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 77.91892,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.0,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.0810852,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.3243256,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.40541,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.48649,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.5675659,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.8108139,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.89189,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 78.97298,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 79.0540543,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 80.4324341,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 80.51352,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 80.5946,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 80.6756744,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 80.91892,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.0,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.0810852,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.16216,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.40541,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.48649,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.5675659,
-          "holdTime": 0.0,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.64865,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 81.89189,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 93.40541,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 93.56757,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 93.72973,
-          "holdTime": 0.0,
-          "positionX": 0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 93.89189,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 94.0540543,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 94.21622,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 94.37838,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 94.7027054,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 94.86487,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 95.02703,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 95.18919,
-          "holdTime": 0.0,
-          "positionX": 0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 95.35136,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 95.51352,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 95.6756744,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 96.0,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 96.16216,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 96.3243256,
-          "holdTime": 0.0,
-          "positionX": 0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 96.48649,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 96.64865,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 96.8108139,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 96.97298,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 97.2973,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 97.459465,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 97.62163,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 97.78378,
-          "holdTime": 0.0,
-          "positionX": 0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 97.9459457,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 98.10811,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 98.27027,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 98.5946,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 98.75676,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 98.91892,
-          "holdTime": 0.0,
-          "positionX": 0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 99.0810852,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 99.24325,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 99.40541,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 99.56757,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 99.89189,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 100.054054,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 100.216217,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 100.37838,
-          "holdTime": 0.0,
-          "positionX": 0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 100.540543,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 100.702705,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 100.864868,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 101.189194,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 101.351357,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 101.513519,
-          "holdTime": 0.0,
-          "positionX": 0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 101.675682,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 101.837837,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 102.0,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 102.162163,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 102.486488,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 102.648651,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 102.810814,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 102.972977,
-          "holdTime": 0.0,
-          "positionX": 0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 103.135139,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 103.2973,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 103.459465,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 103.783783,
-          "holdTime": 0.6486511,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 104.432434,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 104.75676,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 105.081085,
-          "holdTime": 0.6486435,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 105.729729,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 106.054054,
-          "holdTime": 0.0,
-          "positionX": 0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 106.37838,
-          "holdTime": 0.6486511,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 107.027031,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 107.351357,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 107.675682,
-          "holdTime": 0.6486435,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 108.324326,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 108.648651,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 108.972977,
-          "holdTime": 0.6486511,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 109.621628,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 109.945946,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 110.270271,
-          "holdTime": 0.6486511,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 110.918922,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 111.243248,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 111.567574,
-          "holdTime": 0.6486435,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 112.216217,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 112.540543,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 112.864868,
-          "holdTime": 0.6486511,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 113.513519,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 113.837837,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 114.162163,
-          "holdTime": 0.324325562,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 114.486488,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 114.810814,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 115.135139,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 115.459465,
-          "holdTime": 0.324317932,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 115.783783,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 116.108109,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 116.432434,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 116.75676,
-          "holdTime": 0.324325562,
-          "positionX": -0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 117.081085,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 117.405411,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 117.729736,
-          "holdTime": 0.0,
-          "positionX": -0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 118.054054,
-          "holdTime": 0.324325562,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 118.37838,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 118.702705,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 119.027031,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 119.351357,
-          "holdTime": 0.324325562,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 119.675682,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 120.0,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 120.324326,
-          "holdTime": 0.0,
-          "positionX": 0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 120.648651,
-          "holdTime": 0.324325562,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 120.972977,
-          "holdTime": 0.0,
-          "positionX": -0.5,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 121.2973,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 121.621628,
-          "holdTime": 0.0,
-          "positionX": 0.25,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 121.945946,
-          "holdTime": 0.324325562,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 122.270271,
-          "holdTime": 0.0,
-          "positionX": 0.75,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 122.5946,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 122.918922,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 123.243248,
-          "holdTime": 0.324325562,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 123.567574,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 123.891891,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 124.216217,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 124.540543,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 124.540543,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 124.864868,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 125.027031,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 125.351357,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 125.513519,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 125.513519,
-          "holdTime": 0.0,
-          "positionX": 0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 126.0,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 126.0,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 126.486488,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 126.486488,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 126.810814,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 126.972977,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 127.135139,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 127.459465,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 127.621628,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 127.945946,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 128.108109,
-          "holdTime": 0.0,
-          "positionX": 0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 128.5946,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 128.75676,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 128.918915,
-          "holdTime": 0.0,
-          "positionX": 0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 129.081085,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 129.24324,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 129.405411,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 129.567566,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 129.729736,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 129.729736,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 130.378387,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 130.540543,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 130.702713,
-          "holdTime": 0.0,
-          "positionX": -0.210526317,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 130.864868,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 130.864868,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 131.675674,
-          "holdTime": 0.0,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 131.837845,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 132.0,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 132.16217,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 132.324326,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 132.648651,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 132.810822,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
+          "holdTime": 0.4,
+          "positionX": -0.855469,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         },
         {
-          "type": 0,
-          "time": 133.135132,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 133.2973,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 133.945953,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 134.108109,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 134.270279,
-          "holdTime": 0.0,
-          "positionX": 0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 134.432434,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 134.513519,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 134.5946,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 134.918915,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 134.918915,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 135.24324,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 135.405411,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 135.567566,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 135.729736,
-          "holdTime": 0.0,
-          "positionX": 0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 135.891891,
-          "holdTime": 0.0,
-          "positionX": -0.105263159,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 0,
-          "time": 136.378387,
-          "holdTime": 0.0,
-          "positionX": -0.315789461,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 136.378387,
-          "holdTime": 0.0,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 136.864868,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 136.864868,
-          "holdTime": 0.0,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 137.027023,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
           "type": 2,
-          "time": 137.1892,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
+          "time": 66.9984,
+          "holdTime": 0.4,
+          "positionX": -0.390625,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 137.351349,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 137.351349,
-          "holdTime": 0.0,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 0,
-          "time": 138.0,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
         },
         {
           "type": 0,
-          "time": 138.0,
+          "time": 68.0,
           "holdTime": 0.0,
-          "positionX": -0.210526317,
+          "positionX": 0.019531,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 138.16217,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 2,
-          "time": 138.324326,
-          "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
           "hasOther": false
         },
         {
           "type": 0,
-          "time": 138.4865,
-          "holdTime": 0.0,
-          "positionX": 0.0,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 2,
-          "time": 138.4865,
+          "time": 68.4992,
           "holdTime": 0.0,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": true
-        },
-        {
-          "type": 1,
-          "time": 138.972977,
-          "holdTime": 0.4864807,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 139.459457,
-          "holdTime": 0.6486511,
-          "positionX": -0.5263158,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 140.108109,
-          "holdTime": 0.6486511,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 140.75676,
-          "holdTime": 0.6486511,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 141.405411,
-          "holdTime": 0.6486511,
-          "positionX": 0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 142.054062,
-          "holdTime": 0.6486511,
-          "positionX": -0.6315789,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 142.702713,
-          "holdTime": 0.648635864,
-          "positionX": 0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 143.351349,
-          "holdTime": 0.6486511,
-          "positionX": -0.421052635,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 144.0,
-          "holdTime": 0.6486511,
-          "positionX": 0.7368421,
-          "isFakeNote": false,
-          "offset": 0.0,
-          "isAbove": true,
-          "hasOther": false
-        },
-        {
-          "type": 1,
-          "time": 144.648651,
-          "holdTime": 0.6486511,
-          "positionX": -0.5263158,
+          "positionX": 0.367188,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
@@ -3612,188 +707,3086 @@
         },
         {
           "type": 0,
-          "time": 145.2973,
+          "time": 68.9984,
           "holdTime": 0.0,
-          "positionX": 0.5263158,
+          "positionX": 0.515625,
           "isFakeNote": false,
           "offset": 0.0,
           "isAbove": true,
           "hasOther": false
         }
       ],
-      "notesBelow": [],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 56.0,
+          "holdTime": 0.4,
+          "positionX": 0.914062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 56.9984,
+          "holdTime": 0.4,
+          "positionX": 0.339844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 58.0,
+          "holdTime": 0.8,
+          "positionX": -0.269531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 62.4992,
+          "holdTime": 0.0,
+          "positionX": 0.347656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 62.9984,
+          "holdTime": 0.4,
+          "positionX": 0.273438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 64.0,
+          "holdTime": 0.8,
+          "positionX": -0.316406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 69.4976,
+          "holdTime": 0.0,
+          "positionX": 0.441406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 70.0,
+          "holdTime": 0.8,
+          "positionX": 0.109375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
       "far": null
     },
     {
       "segmentEvents": {
-        "MoveX": [
-          {
-            "beat": 20.7567577,
-            "value": 0.0
-          },
-          {
-            "beat": 23.3513527,
-            "value": 0.0
-          },
-          {
-            "beat": 25.9556751,
-            "value": 0.0
-          },
-          {
-            "beat": 28.54054,
-            "value": 0.0
-          },
-          {
-            "beat": 31.1351357,
-            "value": 0.0
-          },
-          {
-            "beat": 33.72973,
-            "value": 0.0
-          },
-          {
-            "beat": 36.3243256,
-            "value": 0.0
-          },
-          {
-            "beat": 38.91892,
-            "value": 0.0
-          }
-        ],
+        "MoveX": [],
         "MoveY": [],
-        "Rotate": [
-          {
-            "beat": 20.7567577,
-            "value": 90.0
-          }
-        ],
-        "Alpha": [
-          {
-            "beat": 0.0,
-            "value": 0.0
-          },
-          {
-            "beat": 20.7567577,
-            "value": 1.0
-          },
-          {
-            "beat": 23.3513527,
-            "value": 1.0
-          },
-          {
-            "beat": 25.95892,
-            "value": 1.0
-          },
-          {
-            "beat": 28.54054,
-            "value": 1.0
-          },
-          {
-            "beat": 31.1351357,
-            "value": 1.0
-          },
-          {
-            "beat": 33.72973,
-            "value": 1.0
-          },
-          {
-            "beat": 36.3243256,
-            "value": 1.0
-          },
-          {
-            "beat": 38.91892,
-            "value": 1.0
-          }
-        ],
-        "Length": [
-          {
-            "beat": 20.7567577,
-            "value": 10.0
-          }
-        ]
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
       },
-      "notesAbove": [],
-      "notesBelow": [],
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 73.4976,
+          "holdTime": 1.0,
+          "positionX": 0.691406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 74.9984,
+          "holdTime": 0.5,
+          "positionX": -0.175781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 76.0,
+          "holdTime": 0.0,
+          "positionX": -0.75,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 81.4976,
+          "holdTime": 1.0,
+          "positionX": -0.699219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 82.9984,
+          "holdTime": 0.5,
+          "positionX": 0.183594,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 84.0,
+          "holdTime": 0.0,
+          "positionX": 0.585938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 85.4976,
+          "holdTime": 0.0,
+          "positionX": -0.152344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 86.0,
+          "holdTime": 0.5,
+          "positionX": -0.507812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 86.9984,
+          "holdTime": 0.5,
+          "positionX": -0.910156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 0,
+          "time": 72.0,
+          "holdTime": 0.0,
+          "positionX": 0.535156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 72.4992,
+          "holdTime": 0.5,
+          "positionX": 0.84375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 76.4992,
+          "holdTime": 0.5,
+          "positionX": -0.480469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 77.4976,
+          "holdTime": 0.0,
+          "positionX": 0.128906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 78.0,
+          "holdTime": 0.5,
+          "positionX": 0.019531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 78.9984,
+          "holdTime": 0.0,
+          "positionX": -0.628906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 79.4976,
+          "holdTime": 0.0,
+          "positionX": -0.773438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 80.0,
+          "holdTime": 1.0,
+          "positionX": -0.253906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 84.4992,
+          "holdTime": 0.5,
+          "positionX": 0.253906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
       "far": null
     },
     {
       "segmentEvents": {
-        "MoveX": [
-          {
-            "beat": 31.1351357,
-            "value": 0.0
-          },
-          {
-            "beat": 33.72973,
-            "value": 0.0
-          },
-          {
-            "beat": 36.3243256,
-            "value": 0.0
-          },
-          {
-            "beat": 38.91892,
-            "value": 0.0
-          }
-        ],
+        "MoveX": [],
         "MoveY": [],
-        "Rotate": [
-          {
-            "beat": 20.7567577,
-            "value": 90.0
-          }
-        ],
-        "Alpha": [
-          {
-            "beat": 0.0,
-            "value": 0.0
-          },
-          {
-            "beat": 31.1351357,
-            "value": 1.0
-          },
-          {
-            "beat": 33.72973,
-            "value": 1.0
-          },
-          {
-            "beat": 36.3243256,
-            "value": 1.0
-          },
-          {
-            "beat": 38.91892,
-            "value": 1.0
-          }
-        ],
-        "Length": [
-          {
-            "beat": 20.7567577,
-            "value": 10.0
-          }
-        ]
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
       },
-      "notesAbove": [],
-      "notesBelow": [],
+      "notesAbove": [
+        {
+          "type": 0,
+          "time": 93.4976,
+          "holdTime": 0.0,
+          "positionX": 0.804688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 94.0,
+          "holdTime": 1.0,
+          "positionX": 0.433594,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 98.9984,
+          "holdTime": 0.5,
+          "positionX": -0.273438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 102.9984,
+          "holdTime": 0.0,
+          "positionX": 0.320312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 103.248,
+          "holdTime": 0.0,
+          "positionX": 0.273438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 103.4976,
+          "holdTime": 0.0,
+          "positionX": 0.261719,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 103.7472,
+          "holdTime": 0.0,
+          "positionX": 0.289062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 0,
+          "time": 88.0,
+          "holdTime": 0.0,
+          "positionX": -0.875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 88.4992,
+          "holdTime": 0.0,
+          "positionX": -0.503906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 88.9984,
+          "holdTime": 0.0,
+          "positionX": -0.1875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 89.4976,
+          "holdTime": 1.0,
+          "positionX": -0.328125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 90.9984,
+          "holdTime": 0.5,
+          "positionX": -0.066406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 92.0,
+          "holdTime": 0.0,
+          "positionX": 0.625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 92.4992,
+          "holdTime": 0.5,
+          "positionX": 0.773438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 96.0,
+          "holdTime": 1.0,
+          "positionX": -0.753906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 97.4976,
+          "holdTime": 1.0,
+          "positionX": 0.167969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 100.0,
+          "holdTime": 0.0,
+          "positionX": -0.675781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 100.4992,
+          "holdTime": 1.0,
+          "positionX": -0.449219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 102.0,
+          "holdTime": 0.5,
+          "positionX": 0.484375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 104.0,
+          "holdTime": 0.5,
+          "positionX": 0.355469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 104.9984,
+          "holdTime": 0.5,
+          "positionX": 0.320312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 106.0,
+          "holdTime": 0.0,
+          "positionX": -0.355469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 110.0,
+          "holdTime": 0.0,
+          "positionX": 0.113281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 110.4992,
+          "holdTime": 0.0,
+          "positionX": -0.21875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 110.9984,
+          "holdTime": 0.5,
+          "positionX": 0.066406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 112.0,
+          "holdTime": 1.0,
+          "positionX": 0.75,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 113.4976,
+          "holdTime": 0.0,
+          "positionX": 0.414062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 116.0,
+          "holdTime": 0.0,
+          "positionX": 0.414062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 116.4992,
+          "holdTime": 0.0,
+          "positionX": 0.613281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 116.9984,
+          "holdTime": 0.5,
+          "positionX": 0.257812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 118.0,
+          "holdTime": 0.5,
+          "positionX": -0.234375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 118.9984,
+          "holdTime": 0.0,
+          "positionX": -0.921875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 0,
+          "time": 106.4992,
+          "holdTime": 0.0,
+          "positionX": -0.667969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 106.9984,
+          "holdTime": 0.5,
+          "positionX": -0.492188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 108.0,
+          "holdTime": 0.5,
+          "positionX": 0.226562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 108.9984,
+          "holdTime": 0.5,
+          "positionX": -0.183594,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 114.0,
+          "holdTime": 0.5,
+          "positionX": 0.152344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 114.9984,
+          "holdTime": 0.5,
+          "positionX": 0.8125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 119.4976,
+          "holdTime": 0.0,
+          "positionX": -0.976562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 124.4992,
+          "holdTime": 1.0,
+          "positionX": 0.597656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 126.0,
+          "holdTime": 0.0,
+          "positionX": 0.902344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 126.4992,
+          "holdTime": 0.0,
+          "positionX": 0.511719,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 126.9984,
+          "holdTime": 0.5,
+          "positionX": 0.132812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 130.0,
+          "holdTime": 0.5,
+          "positionX": -0.570312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 130.9984,
+          "holdTime": 0.0,
+          "positionX": -0.53125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 132.9984,
+          "holdTime": 0.0,
+          "positionX": -0.570312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 120.0,
+          "holdTime": 0.5,
+          "positionX": -0.726562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 120.9984,
+          "holdTime": 0.5,
+          "positionX": -0.074219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 122.0,
+          "holdTime": 0.0,
+          "positionX": -0.421875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 122.4992,
+          "holdTime": 1.0,
+          "positionX": 0.070312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 124.0,
+          "holdTime": 0.0,
+          "positionX": 0.929688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 128.0,
+          "holdTime": 1.0,
+          "positionX": 0.144531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 129.4976,
+          "holdTime": 0.0,
+          "positionX": -0.296875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 131.4976,
+          "holdTime": 1.0,
+          "positionX": -0.296875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 133.4976,
+          "holdTime": 0.0,
+          "positionX": -0.816406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 134.0,
+          "holdTime": 0.5,
+          "positionX": -0.484375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 134.9984,
+          "holdTime": 0.0,
+          "positionX": 0.011719,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 135.4976,
+          "holdTime": 0.0,
+          "positionX": 0.378906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 137.4976,
+          "holdTime": 1.0,
+          "positionX": 0.460938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 138.9984,
+          "holdTime": 0.0,
+          "positionX": 0.601562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 139.4976,
+          "holdTime": 0.0,
+          "positionX": 0.195312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 140.0,
+          "holdTime": 1.0,
+          "positionX": -0.097656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 144.7488,
+          "holdTime": 0.0,
+          "positionX": 0.203125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 144.9984,
+          "holdTime": 0.5,
+          "positionX": 0.089844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 146.0,
+          "holdTime": 0.5,
+          "positionX": 0.328125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 146.9984,
+          "holdTime": 0.0,
+          "positionX": -0.054688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 147.4976,
+          "holdTime": 0.0,
+          "positionX": -0.066406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 148.0,
+          "holdTime": 0.0,
+          "positionX": -0.410156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 148.2496,
+          "holdTime": 0.0,
+          "positionX": -0.511719,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 148.4992,
+          "holdTime": 0.0,
+          "positionX": -0.539062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 136.0,
+          "holdTime": 1.0,
+          "positionX": 0.878906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 141.4976,
+          "holdTime": 1.0,
+          "positionX": -0.597656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 142.9984,
+          "holdTime": 0.0,
+          "positionX": -0.226562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 143.4976,
+          "holdTime": 0.0,
+          "positionX": -0.289062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 144.0,
+          "holdTime": 0.0,
+          "positionX": 0.15625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 144.2496,
+          "holdTime": 0.0,
+          "positionX": 0.238281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 144.4992,
+          "holdTime": 0.0,
+          "positionX": 0.253906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 148.7488,
+          "holdTime": 0.0,
+          "positionX": -0.492188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 148.9984,
+          "holdTime": 0.5,
+          "positionX": -0.382812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 150.0,
+          "holdTime": 0.5,
+          "positionX": -0.097656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 150.9984,
+          "holdTime": 0.0,
+          "positionX": 0.300781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 151.248,
+          "holdTime": 0.0,
+          "positionX": 0.453125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 151.4976,
+          "holdTime": 0.0,
+          "positionX": 0.605469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 151.7472,
+          "holdTime": 0.0,
+          "positionX": 0.761719,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 0,
+          "time": 152.9984,
+          "holdTime": 0.0,
+          "positionX": 0.695312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 153.4976,
+          "holdTime": 0.0,
+          "positionX": 0.949219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 154.0,
+          "holdTime": 0.0,
+          "positionX": 0.59375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 154.2496,
+          "holdTime": 0.0,
+          "positionX": 0.59375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 154.4992,
+          "holdTime": 0.0,
+          "positionX": 0.59375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 154.9984,
+          "holdTime": 0.5,
+          "positionX": 0.203125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 156.0,
+          "holdTime": 0.0,
+          "positionX": -0.492188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 156.2496,
+          "holdTime": 0.0,
+          "positionX": -0.492188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 156.4992,
+          "holdTime": 0.0,
+          "positionX": -0.492188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 156.9984,
+          "holdTime": 0.0,
+          "positionX": -0.789062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 157.4976,
+          "holdTime": 0.5,
+          "positionX": -0.515625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 159.7472,
+          "holdTime": 0.0,
+          "positionX": 0.359375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 160.0,
+          "holdTime": 1.0,
+          "positionX": 0.457031,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 163.4976,
+          "holdTime": 0.0,
+          "positionX": -0.882812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 163.7472,
+          "holdTime": 0.0,
+          "positionX": -0.882812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 164.0,
+          "holdTime": 0.0,
+          "positionX": -0.882812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 164.4992,
+          "holdTime": 0.0,
+          "positionX": -0.238281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 152.0,
+          "holdTime": 0.5,
+          "positionX": 0.914062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 158.4992,
+          "holdTime": 0.0,
+          "positionX": -0.550781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 158.9984,
+          "holdTime": 0.0,
+          "positionX": -0.074219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 159.248,
+          "holdTime": 0.0,
+          "positionX": 0.078125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 159.4976,
+          "holdTime": 0.0,
+          "positionX": 0.230469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 162.0,
+          "holdTime": 1.0,
+          "positionX": -0.449219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 164.9984,
+          "holdTime": 0.0,
+          "positionX": -0.449219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 168.0,
+          "holdTime": 1.0,
+          "positionX": 0.929688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 170.9984,
+          "holdTime": 0.5,
+          "positionX": -0.003906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 172.4992,
+          "holdTime": 1.0,
+          "positionX": -0.320312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 174.0,
+          "holdTime": 0.0,
+          "positionX": -0.707031,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 178.0,
+          "holdTime": 0.0,
+          "positionX": 0.210938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 179.4976,
+          "holdTime": 0.0,
+          "positionX": 0.796875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 180.0,
+          "holdTime": 0.5,
+          "positionX": 0.410156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 180.9984,
+          "holdTime": 0.5,
+          "positionX": -0.089844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 182.0,
+          "holdTime": 0.0,
+          "positionX": -0.746094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 0,
+          "time": 169.4976,
+          "holdTime": 0.0,
+          "positionX": 0.484375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 170.0,
+          "holdTime": 0.5,
+          "positionX": 0.121094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 172.0,
+          "holdTime": 0.0,
+          "positionX": -0.34375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 174.4992,
+          "holdTime": 0.0,
+          "positionX": -0.816406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 174.9984,
+          "holdTime": 0.5,
+          "positionX": -0.410156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 176.0,
+          "holdTime": 1.0,
+          "positionX": 0.339844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 177.4976,
+          "holdTime": 0.0,
+          "positionX": 0.976562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 178.4992,
+          "holdTime": 0.5,
+          "positionX": 0.578125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 182.4992,
+          "holdTime": 0.0,
+          "positionX": -0.894531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 182.9984,
+          "holdTime": 0.0,
+          "positionX": -0.433594,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 183.4976,
+          "holdTime": 0.0,
+          "positionX": -0.839844,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 186.9984,
+          "holdTime": 0.5,
+          "positionX": 0.996094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 188.0,
+          "holdTime": 0.0,
+          "positionX": 0.300781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 188.4992,
+          "holdTime": 1.0,
+          "positionX": 0.054688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 190.0,
+          "holdTime": 0.0,
+          "positionX": -0.179688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 190.4992,
+          "holdTime": 0.0,
+          "positionX": -0.777344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 192.0,
+          "holdTime": 1.0,
+          "positionX": -0.304688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 193.4976,
+          "holdTime": 0.5,
+          "positionX": -0.777344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 198.4992,
+          "holdTime": 0.0,
+          "positionX": 0.917969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 198.7488,
+          "holdTime": 0.0,
+          "positionX": 0.820312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 198.9984,
+          "holdTime": 0.25,
+          "positionX": 0.671875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 199.4976,
+          "holdTime": 0.25,
+          "positionX": 0.296875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 184.0,
+          "holdTime": 1.0,
+          "positionX": -0.429688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 185.4976,
+          "holdTime": 0.0,
+          "positionX": 0.578125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 186.0,
+          "holdTime": 0.5,
+          "positionX": 0.90625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 190.9984,
+          "holdTime": 0.5,
+          "positionX": -0.648438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 194.4992,
+          "holdTime": 0.5,
+          "positionX": -0.417969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 195.4976,
+          "holdTime": 0.0,
+          "positionX": -0.785156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 196.0,
+          "holdTime": 1.0,
+          "positionX": -0.320312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 197.4976,
+          "holdTime": 0.0,
+          "positionX": 0.753906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 198.0,
+          "holdTime": 0.0,
+          "positionX": 0.871094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 198.2496,
+          "holdTime": 0.0,
+          "positionX": 0.9375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 0,
+          "time": 200.0,
+          "holdTime": 0.0,
+          "positionX": -0.132812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 202.0,
+          "holdTime": 0.0,
+          "positionX": -0.453125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 204.9984,
+          "holdTime": 0.5,
+          "positionX": -0.171875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 206.0,
+          "holdTime": 0.0,
+          "positionX": 0.777344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 206.4992,
+          "holdTime": 0.0,
+          "positionX": 0.359375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 206.9984,
+          "holdTime": 0.0,
+          "positionX": 0.699219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 210.4992,
+          "holdTime": 0.0,
+          "positionX": 0.355469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 210.9984,
+          "holdTime": 0.5,
+          "positionX": 0.132812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 212.0,
+          "holdTime": 0.0,
+          "positionX": -0.617188,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 212.4992,
+          "holdTime": 0.0,
+          "positionX": -0.832031,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 214.9984,
+          "holdTime": 0.5,
+          "positionX": -0.832031,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 0,
+          "time": 200.4992,
+          "holdTime": 0.0,
+          "positionX": -0.230469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 200.9984,
+          "holdTime": 0.5,
+          "positionX": 0.222656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 202.4992,
+          "holdTime": 0.0,
+          "positionX": -0.652344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 202.9984,
+          "holdTime": 0.5,
+          "positionX": -0.230469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 204.0,
+          "holdTime": 0.5,
+          "positionX": -0.347656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 207.4976,
+          "holdTime": 0.0,
+          "positionX": 0.609375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 208.0,
+          "holdTime": 0.5,
+          "positionX": 0.050781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 208.9984,
+          "holdTime": 0.5,
+          "positionX": 0.914062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 210.0,
+          "holdTime": 0.0,
+          "positionX": 0.234375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 212.9984,
+          "holdTime": 0.5,
+          "positionX": -0.539062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 214.0,
+          "holdTime": 0.0,
+          "positionX": -0.476562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 214.4992,
+          "holdTime": 0.0,
+          "positionX": -0.878906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 0,
+          "time": 216.0,
+          "holdTime": 0.0,
+          "positionX": 0.265625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 216.4992,
+          "holdTime": 0.0,
+          "positionX": -0.050781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 217.4976,
+          "holdTime": 0.0,
+          "positionX": 0.097656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 218.0,
+          "holdTime": 0.0,
+          "positionX": -0.527344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 218.4992,
+          "holdTime": 0.0,
+          "positionX": 0.097656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 218.9984,
+          "holdTime": 0.5,
+          "positionX": 0.394531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 220.0,
+          "holdTime": 0.0,
+          "positionX": 0.660156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 220.4992,
+          "holdTime": 0.0,
+          "positionX": 0.785156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 224.0,
+          "holdTime": 0.0,
+          "positionX": -0.601562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 224.4992,
+          "holdTime": 0.0,
+          "positionX": -0.144531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 225.4976,
+          "holdTime": 0.0,
+          "positionX": -0.414062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 226.0,
+          "holdTime": 0.0,
+          "positionX": -0.878906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 226.4992,
+          "holdTime": 0.0,
+          "positionX": -0.144531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 226.9984,
+          "holdTime": 0.0,
+          "positionX": -0.40625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 227.4976,
+          "holdTime": 0.5,
+          "positionX": -0.007812,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 228.4992,
+          "holdTime": 0.0,
+          "positionX": 0.210938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 228.9984,
+          "holdTime": 0.5,
+          "positionX": 0.210938,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 230.0,
+          "holdTime": 0.0,
+          "positionX": -0.234375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 230.2496,
+          "holdTime": 0.0,
+          "positionX": -0.371094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 230.4992,
+          "holdTime": 0.0,
+          "positionX": -0.527344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 230.7488,
+          "holdTime": 0.0,
+          "positionX": -0.675781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 230.9984,
+          "holdTime": 0.25,
+          "positionX": -0.789062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 0,
+          "time": 216.9984,
+          "holdTime": 0.0,
+          "positionX": -0.234375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 220.9984,
+          "holdTime": 0.5,
+          "positionX": 0.269531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 222.0,
+          "holdTime": 0.0,
+          "positionX": 0.628906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 222.4992,
+          "holdTime": 0.0,
+          "positionX": 0.167969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 222.9984,
+          "holdTime": 0.5,
+          "positionX": -0.273438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 224.9984,
+          "holdTime": 0.0,
+          "positionX": -0.847656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 231.4976,
+          "holdTime": 0.25,
+          "positionX": -0.414062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 0,
+          "time": 232.0,
+          "holdTime": 0.0,
+          "positionX": -0.484375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 232.4992,
+          "holdTime": 0.0,
+          "positionX": 0.152344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 234.9984,
+          "holdTime": 0.0,
+          "positionX": 0.46875,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 235.4976,
+          "holdTime": 0.0,
+          "positionX": 0.660156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 238.4992,
+          "holdTime": 1.0,
+          "positionX": 0.300781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 240.0,
+          "holdTime": 0.0,
+          "positionX": -0.953125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 240.4992,
+          "holdTime": 0.0,
+          "positionX": -0.519531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 240.9984,
+          "holdTime": 0.0,
+          "positionX": -0.863281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 241.4976,
+          "holdTime": 1.0,
+          "positionX": -0.410156,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 242.9984,
+          "holdTime": 0.5,
+          "positionX": 0.945312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 244.0,
+          "holdTime": 0.0,
+          "positionX": 0.277344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 246.0,
+          "holdTime": 0.5,
+          "positionX": 0.644531,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 246.9984,
+          "holdTime": 0.5,
+          "positionX": 0.332031,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 232.9984,
+          "holdTime": 0.5,
+          "positionX": -0.324219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 233.7472,
+          "holdTime": 0.0,
+          "positionX": -0.191406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 234.0,
+          "holdTime": 0.5,
+          "positionX": -0.191406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 236.0,
+          "holdTime": 0.5,
+          "positionX": 0.109375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 236.9984,
+          "holdTime": 0.5,
+          "positionX": -0.125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 238.0,
+          "holdTime": 0.0,
+          "positionX": 0.59375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 244.4992,
+          "holdTime": 0.0,
+          "positionX": 0.476562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 244.9984,
+          "holdTime": 0.0,
+          "positionX": 0.8125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 245.4976,
+          "holdTime": 0.0,
+          "positionX": 0.195312,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 248.0,
+          "holdTime": 1.0,
+          "positionX": -0.667969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 249.4976,
+          "holdTime": 1.0,
+          "positionX": -0.121094,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 252.0,
+          "holdTime": 0.0,
+          "positionX": -0.941406,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 253.4976,
+          "holdTime": 0.0,
+          "positionX": -0.53125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 254.9984,
+          "holdTime": 0.0,
+          "positionX": 0.054688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 255.248,
+          "holdTime": 0.0,
+          "positionX": 0.164062,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 255.4976,
+          "holdTime": 0.0,
+          "positionX": 0.199219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 255.7472,
+          "holdTime": 0.0,
+          "positionX": 0.148438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 256.0,
+          "holdTime": 0.0,
+          "positionX": 0.027344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 256.4992,
+          "holdTime": 0.5,
+          "positionX": -0.527344,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 257.4976,
+          "holdTime": 1.0,
+          "positionX": 0.605469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 261.4976,
+          "holdTime": 0.0,
+          "positionX": 0.417969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 262.0,
+          "holdTime": 0.5,
+          "positionX": 0.0625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 250.9984,
+          "holdTime": 0.5,
+          "positionX": -0.484375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 252.4992,
+          "holdTime": 0.0,
+          "positionX": -0.488281,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 252.9984,
+          "holdTime": 0.0,
+          "positionX": -0.804688,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 254.0,
+          "holdTime": 0.0,
+          "positionX": -0.015625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 254.4992,
+          "holdTime": 0.0,
+          "positionX": -0.449219,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 258.9984,
+          "holdTime": 0.5,
+          "positionX": 0.355469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 260.0,
+          "holdTime": 0.0,
+          "positionX": 0.398438,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 260.4992,
+          "holdTime": 0.5,
+          "positionX": -0.101562,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 262.9984,
+          "holdTime": 0.5,
+          "positionX": -0.3125,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
+      "far": null
+    },
+    {
+      "segmentEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": [],
+        "Alpha": [],
+        "Length": [],
+        "Speed": []
+      },
+      "notesAbove": [
+        {
+          "type": 2,
+          "time": 264.0,
+          "holdTime": 1.0,
+          "positionX": -0.625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 268.0,
+          "holdTime": 0.0,
+          "positionX": 0.140625,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 268.4992,
+          "holdTime": 0.0,
+          "positionX": 0.542969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 269.4976,
+          "holdTime": 0.0,
+          "positionX": 0.050781,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 270.0,
+          "holdTime": 0.25,
+          "positionX": 0.417969,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 270.4992,
+          "holdTime": 0.25,
+          "positionX": 0.058594,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 270.9984,
+          "holdTime": 0.0,
+          "positionX": -0.207031,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 271.248,
+          "holdTime": 0.0,
+          "positionX": -0.230469,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 271.4976,
+          "holdTime": 0.5,
+          "positionX": -0.253906,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": true,
+          "hasOther": false
+        }
+      ],
+      "notesBelow": [
+        {
+          "type": 2,
+          "time": 265.4976,
+          "holdTime": 1.0,
+          "positionX": 0.0,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 2,
+          "time": 266.9984,
+          "holdTime": 0.5,
+          "positionX": 0.847656,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        },
+        {
+          "type": 0,
+          "time": 268.9984,
+          "holdTime": 0.0,
+          "positionX": 0.4375,
+          "isFakeNote": false,
+          "offset": 0.0,
+          "isAbove": false,
+          "hasOther": false
+        }
+      ],
       "far": null
     }
   ],
   "BoundaryList": [
     {
-      "beat": 26.02702725,
-      "judgeLine": 0
-    },
-    {
-      "beat": 28.54054075,
-      "judgeLine": 0
+      "BoundaryEvents": {
+        "MoveX": [],
+        "MoveY": [],
+        "Rotate": []
+      },
+      "StartTime": 8.0,
+      "EndTime": 271.9976,
+      "DefaultX": 0.0,
+      "DefaultY": -10.0,
+      "Direction": false,
+      "IncludedSegments": null,
+      "includedSegmentIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
     }
   ],
   "bpmList": [
     {
-      "num": 147000,
+      "num": 192000,
       "den": 1000
     }
   ],
   "offset": 0.0,
-  "musicLength": 59.305020408163266,
+  "musicLength": 276.0,
   "beatSubdivision": 4
 }

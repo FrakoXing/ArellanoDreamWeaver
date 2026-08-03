@@ -66,6 +66,10 @@ from dreamweaver.diffusion.noise_scheduler import NoiseScheduler, DDIMSampler
 
 from dreamweaver.chart.structures import ChartData, chart_to_tensor
 
+# 导入新的数据集模块 (支持真实音频)
+from src.data.dataset import ChartDataset as RealChartDataset, DemoChartDataset
+from src.data.audio_processor import AudioProcessor
+
 
 
 
@@ -155,10 +159,27 @@ class ChartDataset(Dataset):
             chart = ChartData.load_from_file(str(chart_path))
 
         except Exception as e:
-
             print(f"加载 {chart_path} 失败: {e}")
-
-            return self.__getitem__((idx + 1) % len(self))
+            # 避免无限递归：尝试其他文件
+            for attempt in range(1, min(10, len(self))):
+                next_idx = (idx + attempt) % len(self)
+                try:
+                    chart = ChartData.load_from_file(str(self.chart_files[next_idx]))
+                    break
+                except Exception:
+                    continue
+            else:
+                # 所有尝试都失败，返回空数据
+                print("警告: 无法加载任何谱面文件")
+                return {
+                    "audio_features": torch.randn(self.max_seq_len, self.audio_feature_dim),
+                    "chart_clean": torch.zeros(self.max_seq_len, self.feature_dim),
+                    "text_condition": torch.randn(512),
+                    "bpm": torch.tensor([0.5]),
+                    "difficulty": torch.tensor([2]),
+                    "filename": "empty",
+                    "note_count": 0
+                }
 
         
 
@@ -951,41 +972,39 @@ class DreamWeaverTrainer:
 
     
 
-    def save_checkpoint(self, filepath: str, extra_info: Optional[Dict] = None):
+    def save_checkpoint(self, filepath: str, extra_info: Optional[Dict] = None, full: bool = True):
+        """保存检查点
 
-        """保存检查点"""
+        Args:
+            filepath: 保存路径
+            extra_info: 额外元数据
+            full: 是否保存完整版 (含优化器状态，可恢复训练)
+        """
+        if full:
+            checkpoint = {
+                "epoch": self.epoch,
+                "global_step": self.global_step,
+                "best_loss": self.best_loss,
+                "transformer_state_dict": self.transformer.state_dict(),
+                "diffusion_state_dict": self.diffusion_unet.state_dict(),
+                "optimizer_state_dict": self.optimizer.state_dict(),
+                "scheduler_state_dict": self.scheduler.state_dict(),
+                "config": self.config
+            }
+            if extra_info:
+                checkpoint.update(extra_info)
+            torch.save(checkpoint, filepath)
+            print(f"💾 完整检查点: {filepath} ({os.path.getsize(filepath)/1024**3:.2f}GB)")
 
-        checkpoint = {
-
-            "epoch": self.epoch,
-
-            "global_step": self.global_step,
-
-            "best_loss": self.best_loss,
-
+        # 轻量版 (仅权重，始终保存)
+        weights_path = filepath.replace(".pth", "_weights.pth")
+        weights = {
             "transformer_state_dict": self.transformer.state_dict(),
-
             "diffusion_state_dict": self.diffusion_unet.state_dict(),
-
-            "optimizer_state_dict": self.optimizer.state_dict(),
-
-            "scheduler_state_dict": self.scheduler.state_dict(),
-
             "config": self.config
-
         }
-
-        
-
-        if extra_info:
-
-            checkpoint.update(extra_info)
-
-        
-
-        torch.save(checkpoint, filepath)
-
-        print(f"💾 已保存检查点到: {filepath}")
+        torch.save(weights, weights_path)
+        print(f"⚡ 轻量版: {weights_path} ({os.path.getsize(weights_path)/1024**3:.2f}GB)")
 
     
 
@@ -1045,15 +1064,23 @@ class DreamWeaverTrainer:
 
         
 
-        # 创建数据集和数据加载器
+        # 创建数据集和数据加载器 (使用支持真实音频的新模块)
 
         data_dir = PROJECT_ROOT / self.config.get("data", {}).get("processed_dir", "data/processed")
+        audio_dir = PROJECT_ROOT / self.config.get("data", {}).get("audio_dir", "data/audio")
+        use_real_audio = self.config.get("training", {}).get("use_real_audio", True)
+        cache_audio = self.config.get("training", {}).get("cache_audio_features", True)
 
-        
-
-        dataset = ChartDataset(str(data_dir))
-
-        
+        dataset = RealChartDataset(
+            data_dir=str(data_dir),
+            audio_dir=str(audio_dir),
+            max_seq_len=self.config.get("model", {}).get("transformer", {}).get("max_seq_len", 4096),
+            feature_dim=self.config.get("data", {}).get("chart", {}).get("feature_dim", 8),
+            audio_feature_dim=self.config.get("data", {}).get("audio", {}).get("feature_dim", 128),
+            sample_rate=self.config.get("data", {}).get("audio", {}).get("sample_rate", 22050),
+            use_real_audio=use_real_audio,
+            cache_audio_features=cache_audio
+        )
 
         if len(dataset) == 0:
 
@@ -1061,50 +1088,8 @@ class DreamWeaverTrainer:
 
             print("使用合成数据进行演示...")
 
-            
-
-            # 创建演示用的假数据集 (返回dict格式，与ChartDataset兼容)
-
-            N = 32
-
-            self._demo_audio = torch.randn(N, 4096, 128)     # [N, T, C] 与ChartDataset一致
-
-            self._demo_chart = torch.randn(N, 4096, 8)       # [N,T,C] feature_dim=8
-            self._demo_cond = torch.randn(N, 512)
-
-            self._demo_bpm = (torch.rand(N) * 0.5 + 0.3).unsqueeze(1)  # [B, 1]
-
-            self._demo_diff = torch.randint(0, 5, (N,))
-
-            
-
-            class DemoDataset:
-
-                def __len__(self): return N
-
-                def __getitem__(self, i):
-
-                    return {
-
-                        "audio_features": self._demo_audio[i],
-
-                        "chart_clean": self._demo_chart[i],
-
-                        "text_condition": self._demo_cond[i],
-
-                        "bpm": self._demo_bpm[i],
-
-                        "difficulty": self._demo_diff[i],
-
-                    }
-
-                def collate_fn(self, batch):
-
-                    return ChartDataset.collate_fn(batch)
-
-            
-
-            dataset = DemoDataset()
+            N = self.config.get("training", {}).get("demo_samples", 32)
+            dataset = DemoChartDataset(num_samples=N)
 
         
 
@@ -1186,7 +1171,7 @@ class DreamWeaverTrainer:
 
                 best_path = self.log_dir / "best_model.pth"
 
-                self.save_checkpoint(str(best_path))
+                self.save_checkpoint(str(best_path), full=True)
 
             
 
@@ -1196,7 +1181,7 @@ class DreamWeaverTrainer:
 
                 ckpt_path = self.log_dir / f"checkpoint_epoch_{epoch+1}.pth"
 
-                self.save_checkpoint(str(ckpt_path))
+                self.save_checkpoint(str(ckpt_path), full=False)
 
         
 
@@ -1204,7 +1189,7 @@ class DreamWeaverTrainer:
 
         final_path = self.log_dir / "final_model.pth"
 
-        self.save_checkpoint(str(final_path))
+        self.save_checkpoint(str(final_path), full=True)
 
         
 
