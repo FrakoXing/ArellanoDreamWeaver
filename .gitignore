@@ -6,7 +6,7 @@ __pycache__/
 dist/
 build/
 
-# === ÐéÄâ»·¾³ ===
+# === ï¿½ï¿½ï¿½â»·ï¿½ï¿½ ===
 venv/
 env/
 .venv/
@@ -17,29 +17,32 @@ env/
 *.swp
 *.swo
 
-# === Êý¾Ý (Í¨³£ºÜ´ó£¬²»ÄÉÈë°æ±¾¿ØÖÆ) ===
+# === ï¿½ï¿½ï¿½ï¿½ (Í¨ï¿½ï¿½ï¿½Ü´ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½) ===
 data/raw/*.mp3
 data/raw/*.wav
 data/raw/*.ogg
 data/processed/*.pt
 data/processed/*.npy
 data/datasets/*
+data/raw_osz/*
+data/audio/*
+data/raw/*
 
-# === Ä£ÐÍÈ¨ÖØ ===
+# === Ä£ï¿½ï¿½È¨ï¿½ï¿½ ===
 checkpoints/*.pth
 checkpoints/*.bin
 checkpoints/*.safetensors
 !checkpoints/.gitkeep
 
-# === ÈÕÖ¾ ===
+# === ï¿½ï¿½Ö¾ ===
 logs/*
 !logs/.gitkeep
 
-# === µ¼³ö ===
+# === ï¿½ï¿½ï¿½ï¿½ ===
 exports/*
 !exports/.gitkeep
 
-# === »·¾³ & ÃÜÔ¿ (°²È«!) ===
+# === ï¿½ï¿½ï¿½ï¿½ & ï¿½ï¿½Ô¿ (ï¿½ï¿½È«!) ===
 .env
 .env.local
 .env.production
@@ -53,3 +56,5 @@ Thumbs.db
 
 # === HuggingFace Cache ===
 ~/.cache/huggingface/
+
+phira_charts/

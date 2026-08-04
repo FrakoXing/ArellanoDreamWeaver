@@ -17,7 +17,7 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from dreamweaver.chart.structures import ChartData, chart_to_tensor
-from .audio_processor import AudioProcessor
+from src.data.audio_processor import AudioProcessor
 
 
 class ChartDataset(Dataset):

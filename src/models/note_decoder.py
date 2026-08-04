@@ -130,25 +130,21 @@ class NoteDecoder(nn.Module):
     
     def create_attention_mask(self, target_tokens: torch.Tensor, pad_id: int = PAD) -> torch.Tensor:
         """
-        创建组合的因果 + Padding掩码
+        创建因果注意力掩码 (2D, 用于 batch_first=True)
         
         Args:
             target_tokens: [batch_size, seq_len]
-            pad_id: padding token id
+            pad_id: padding token id (未使用，保留兼容性)
             
         Returns:
-            mask: [seq_len, seq_len] bool tensor
+            mask: [seq_len, seq_len] bool tensor (因果掩码，上三角为True)
         """
         seq_len = target_tokens.shape[-1]
         
-        # 基础因果掩码
-        causal_mask = self.causal_mask[:seq_len, :seq_len].clone()
+        # 因果掩码 (上三角为 True，表示被遮挡)
+        causal_mask = self.causal_mask[:seq_len, :seq_len]  # [T, T]
         
-        # Padding掩码 (目标端不能attend到pad位置)
-        padding_mask = (target_tokens == pad_id)  # [B, T]
-        causal_mask = causal_mask.unsqueeze(0) | padding_mask.unsqueeze(1)
-        
-        return causal_mask  # [B, T, T] or broadcast to [T, T]
+        return causal_mask
     
     def embed_input(self, tokens: torch.Tensor) -> torch.Tensor:
         """嵌入输入tokens"""
