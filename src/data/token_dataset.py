@@ -46,20 +46,24 @@ class TokenDataset(Dataset):
         sample_rate: int = 22050,
         use_real_audio: bool = True,
         cache_audio_features: bool = True,
+        audio_cache_dir: Optional[str] = None,
         default_duration: float = 180.0,  # 默认 3 分钟
     ):
         """
-        初始化数据集
-        
+        Initialize dataset.
+
         Args:
-            tokens_dir: Token 序列文件目录 (data/tokens/)
-            audio_dir: 音频文件目录，None 则使用 tokens_dir 同级 "audio/"
-            max_seq_len: 最大序列长度 (Token 序列会被 padding/truncating)
-            audio_feature_dim: 音频特征维度 (Mel 频谱通道数)
-            sample_rate: 音频采样率
-            use_real_audio: 是否使用真实音频 (False 用随机噪声)
-            cache_audio_features: 是否缓存音频特征到内存
-            default_duration: 默认谱面时长 (秒)，用于没有时长的情况
+            tokens_dir: Token files directory (data/tokens/)
+            audio_dir: Audio files directory, None uses tokens_dir/../audio/
+            max_seq_len: Max sequence length (tokens are padded/truncated)
+            audio_feature_dim: Audio feature dimension (Mel bands)
+            sample_rate: Audio sample rate
+            use_real_audio: Whether to use real audio (False = random noise)
+            cache_audio_features: Whether to cache audio features in RAM
+            audio_cache_dir: Pre-processed audio cache directory (data/audio_cache/).
+                             If provided, .pt cache files are loaded instead of
+                             processing raw audio with librosa. Much faster!
+            default_duration: Default chart duration (seconds)
         """
         self.tokens_dir = Path(tokens_dir)
         self.audio_dir = Path(audio_dir) if audio_dir else self.tokens_dir.parent / "audio"
@@ -68,19 +72,17 @@ class TokenDataset(Dataset):
         self.sample_rate = sample_rate
         self.use_real_audio = use_real_audio
         self.cache_audio_features = cache_audio_features
+        self.audio_cache_dir = Path(audio_cache_dir) if audio_cache_dir else None
         self.default_duration = default_duration
-        
-        # 音频处理器
-        self.audio_processor = AudioProcessor(
-            sample_rate=sample_rate,
-            n_mels=audio_feature_dim
-        )
+
+        # Audio processor (lazy init, only if disk cache is missing)
+        self._audio_processor = None
         
         # 加载 Token 文件列表
         self.token_files = self._collect_token_files()
         
         if len(self.token_files) == 0:
-            print(f"⚠️  在 {tokens_dir} 中未找到 Token 文件")
+            print(f"[WARN] 在 {tokens_dir} 中未找到 Token 文件")
             print("请先运行: python scripts/unified_tokenizer.py --dir data/raw/ --outdir data/tokens/")
         
         # 音频特征缓存
@@ -114,13 +116,13 @@ class TokenDataset(Dataset):
             else:
                 self._stats["missing_audio"] += 1
         
-        print(f"\n📊 Token 数据集统计:")
+        print(f"\n[DATA] Token Dataset Stats:")
         print(f"  Token 文件数: {self._stats['total_tokens']}")
         print(f"  匹配音频数:   {self._stats['matched_audio']}")
         print(f"  缺失音频数:   {self._stats['missing_audio']}")
         
         if self._stats["missing_audio"] > 0:
-            print(f"\n⚠️  有 {self._stats['missing_audio']} 个 Token 文件缺少对应音频")
+            print(f"\n[WARN] 有 {self._stats['missing_audio']} 个 Token 文件缺少对应音频")
             print(f"   音频文件应放在: {self.audio_dir}")
             print(f"   命名规则: song.json ↔ song.mp3/wav/flac")
     
@@ -173,40 +175,85 @@ class TokenDataset(Dataset):
     
     def _load_audio_features(self, token_path: Path, duration: float) -> torch.Tensor:
         """
-        加载或生成音频特征
-        
+        Load or generate audio features.
+
+        Priority:
+          1. RAM cache (fastest)
+          2. Disk cache (.pt files from prepare_audio_cache.py)
+          3. Real-time librosa processing (slowest)
+          4. Random noise (fallback)
+
         Returns:
             FloatTensor [max_seq_len, audio_feature_dim]
         """
         cache_key = token_path.stem
-        
-        # 检查缓存
+
+        # === Layer 1: RAM cache ===
         if self.cache_audio_features and cache_key in self._audio_cache:
             return self._audio_cache[cache_key]
-        
-        # 查找音频文件
+
+        # === Layer 2: Disk cache (.pt files) ===
+        if self.audio_cache_dir is not None:
+            disk_cache_path = self.audio_cache_dir / f"{cache_key}.pt"
+            if disk_cache_path.exists():
+                try:
+                    features = torch.load(disk_cache_path, map_location='cpu', weights_only=True)
+
+                    # Validate shape
+                    if features.shape[0] != self.max_seq_len:
+                        features = self._resize_audio(features, self.max_seq_len)
+
+                    if self.cache_audio_features:
+                        self._audio_cache[cache_key] = features
+
+                    return features
+                except Exception as e:
+                    pass  # Fall through to real-time processing on cache miss
+
+        # === Layer 3: Real-time librosa processing ===
         audio_path = self._find_audio_file(token_path)
-        
+
         if audio_path and audio_path.exists() and self.use_real_audio:
             try:
-                features = self.audio_processor.align_to_chart(
+                if self._audio_processor is None:
+                    self._audio_processor = AudioProcessor(
+                        sample_rate=self.sample_rate,
+                        n_mels=self.audio_feature_dim,
+                    )
+                features = self._audio_processor.align_to_chart(
                     audio_path,
                     chart_duration=duration,
-                    target_steps=self.max_seq_len
+                    target_steps=self.max_seq_len,
                 )
             except Exception as e:
-                print(f"⚠️  处理音频失败 ({audio_path.name}): {e}")
-                print("   使用随机噪声作为后备")
                 features = torch.randn(self.max_seq_len, self.audio_feature_dim)
         else:
-            # 使用随机噪声
+            # === Layer 4: Random noise fallback ===
             features = torch.randn(self.max_seq_len, self.audio_feature_dim)
-        
-        # 缓存
+
+        # Save to RAM cache
         if self.cache_audio_features:
             self._audio_cache[cache_key] = features
-        
+
         return features
+
+    @staticmethod
+    def _resize_audio(features: torch.Tensor, target_steps: int) -> torch.Tensor:
+        """Resize audio features to target_steps via linear interpolation."""
+        if features.shape[0] == target_steps:
+            return features
+
+        src_len = features.shape[0]
+        src_indices = torch.linspace(0, src_len - 1, src_len)
+        tgt_indices = torch.linspace(0, src_len - 1, target_steps)
+
+        result = torch.zeros(target_steps, features.shape[1])
+        for i in range(features.shape[1]):
+            result[:, i] = torch.from_numpy(
+                np.interp(tgt_indices.numpy(), src_indices.numpy(), features[:, i].numpy())
+            ).float()
+
+        return result
     
     def __len__(self) -> int:
         return len(self.token_files)

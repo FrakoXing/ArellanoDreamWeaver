@@ -57,4 +57,5 @@ Thumbs.db
 # === HuggingFace Cache ===
 ~/.cache/huggingface/
 
-phira_charts/
+phira_charts/*
+processed_pez/*
