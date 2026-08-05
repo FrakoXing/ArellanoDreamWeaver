@@ -182,20 +182,23 @@ def load_audio_features(
     waveform, sr = librosa.load(audio_path, sr=sample_rate, mono=True)
 
     # Extract Mel spectrogram
+    # NOTE: 参数与训练管线 src/data/audio_processor.py 保持一致
+    # (fmin=20, power_to_db ref=np.max, 逐通道 z-score)
     mel_spec = librosa.feature.melspectrogram(
         y=waveform, sr=sr, n_mels=n_mels,
         n_fft=2048, hop_length=512, power=2.0,
+        fmin=20.0, fmax=sr / 2,
     )
 
-    # Convert to dB scale
-    mel_db = librosa.power_to_db(mel_spec, ref=1.0, top_db=80.0)
+    # Convert to dB scale (ref=np.max, 与训练一致)
+    mel_db = librosa.power_to_db(mel_spec, ref=np.max)
 
     # Shape: [n_mels, T] -> [T, n_mels]
     mel_db = mel_db.T.astype(np.float32)
 
-    # Normalize (z-score)
-    mean = mel_db.mean()
-    std = mel_db.std() + 1e-6
+    # Normalize: per-channel z-score (与训练 AudioProcessor._normalize 一致)
+    mean = mel_db.mean(axis=0, keepdims=True)
+    std = mel_db.std(axis=0, keepdims=True) + 1e-8
     mel_normalized = (mel_db - mean) / std
 
     # Resize to target_steps (linear interpolation)
