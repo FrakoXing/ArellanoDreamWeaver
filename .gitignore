@@ -27,6 +27,7 @@ data/datasets/*
 data/raw_osz/*
 data/audio/*
 data/raw/*
+data/tokens/*
 
 # === ģ��Ȩ�� ===
 checkpoints/*.pth
