@@ -60,3 +60,13 @@ Thumbs.db
 
 phira_charts/*
 processed_pez/*
+
+# === 评级 AI 训练产物 ===
+data/rating/
+*.onnx
+logs/*.pth
+logs/*.pt
+logs/rating_*
+
+# === IDE 文档 ===
+.trae/
