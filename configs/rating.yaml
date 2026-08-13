@@ -1,0 +1,94 @@
+# 定数评级 AI 配置
+# ===============
+# 用于 configs/rating.yaml, 被 train_rating.py / export_rating_onnx.py 共享
+
+# ------------------------------------------------------------
+# 模型架构
+# ------------------------------------------------------------
+model:
+  vocab_size: 256              # Token 词表大小 (与 NoteDecoder 对齐)
+  d_model: 256                 # 隐藏维度 (轻量, 编辑器友好)
+  n_heads: 8                   # 注意力头数
+  n_layers: 4                  # Transformer 层数
+  d_ff: 1024                   # FFN 维度
+  max_seq_len: 2048            # 最大序列长度 (编辑器谱面够用)
+  dropout: 0.2                 # Dropout (防过拟合, 5M 参数 vs 6369 样本)
+  handcrafted_dim: 15          # 手工特征维度
+  # Game 条件经 game_embed (nn.Embedding(vocab_size, d_model)) 注入,
+  # game_token_ids ∈ {116,117,118} 直接索引, 无需 num_games 参数
+
+# ------------------------------------------------------------
+# 数据
+# ------------------------------------------------------------
+data:
+  tokens_dir: data/tokens                  # Token 文件目录
+  labels_file: data/rating/labels.json     # 真标签
+  labels_pseudo_file: data/rating/labels_pseudo.json  # 伪标签 (v2 用)
+  normalization_file: data/rating/normalization.json  # 归一化范围
+  feature_stats_file: data/rating/feature_stats.json  # 特征标准化统计
+  calibration_file: data/rating/calibration_set.json  # 校准集 (不参与训练)
+  calibration_ratio: 0.03                  # 校准集抽样比例 (~200 条)
+  max_seq_len: 2048                        # 截断/填充长度
+  num_workers: 4                           # DataLoader workers
+  label_source: labels                     # labels / pseudo / any (v2 用 any)
+
+# ------------------------------------------------------------
+# 训练
+# ------------------------------------------------------------
+training:
+  epochs: 100                  # 总 epoch
+  batch_size: 32               # batch size
+  lr: 0.0001                   # 学习率 (v1)
+  lr_v2: 0.00003               # v2 微调学习率 (v1 的 1/3)
+  weight_decay: 0.05           # 权重衰减 (防过拟合)
+  warmup_epochs: 5             # warmup epoch
+  min_lr: 0.000001             # 余弦退火最小学习率
+  use_amp: true                # AMP 混合精度 (CUDA)
+  grad_clip: 1.0               # 梯度裁剪
+  early_stop_patience: 5       # 早停耐心 (验证 MAE 不降 epoch 数)
+  pseudo_weight: 0.5           # 伪标签样本 loss 降权系数
+  huber_delta: 0.05            # Huber Loss delta (归一化空间, ≈1 个 Phigros 等级)
+  num_buckets: 8               # 分桶采样桶数 (解决类别不均衡)
+  seed: 42
+
+# ------------------------------------------------------------
+# 验证指标
+# ------------------------------------------------------------
+eval:
+  hit_thresholds: [0.5, 1.0, 1.5]   # ±命中率阈值 (原始尺度)
+  target_mae_phira: 0.4             # Phigros MAE 目标
+  target_hit05_phira: 0.75          # Phigros ±0.5 命中率目标
+
+# ------------------------------------------------------------
+# 半监督迭代
+# ------------------------------------------------------------
+pseudo_label:
+  confidence_threshold: 0.05        # |pred - bucket_center| < 此值才保留
+  min_confidence_samples: 500       # 最少保留样本数 (太少则跳过 v2)
+
+# ------------------------------------------------------------
+# ONNX 导出
+# ------------------------------------------------------------
+export:
+  opset_ort: 17                     # ONNX Runtime Unity
+  opset_sentis: 14                  # Unity Sentis
+  static_shapes: true               # 静态形状 (batch=1, seq=2048)
+  batch_size: 1
+  seq_len: 2048
+  feature_dim: 15
+  output_dir: exports
+  ort_filename: rating_ort_opset17.onnx
+  sentis_filename: rating_sentis_opset14.onnx
+  verify: true                      # 导出后用 onnxruntime 验证
+  verify_rtol: 0.0001
+  verify_atol: 0.00001
+
+# ------------------------------------------------------------
+# 日志
+# ------------------------------------------------------------
+logging:
+  log_dir: logs
+  tensorboard: true
+  log_interval: 20                  # 每 N step 打印一次
+  save_top_k: 3                     # 保留最优的 K 个 checkpoint
+  save_every_epoch: false           # 是否每 epoch 存 checkpoint

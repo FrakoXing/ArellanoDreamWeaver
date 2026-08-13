@@ -1,0 +1,14 @@
+# 1. 重新生成 token 数据（过滤空白段）
+python scripts/unified_tokenizer.py --dir data/raw/ --outdir data/tokens/
+
+# 2. 验证新的 time_offset 分布
+python scripts/check_time_offset.py
+
+# 3. 重新训练模型
+python scripts/train_tokens.py --batch-size 8 --epochs 100
+
+# 4. 导出 ONNX 模型
+python scripts/export_onnx.py --checkpoint logs/best_model.pth --output model.onnx --batch-size 1 --seq-len 256 --static --verify
+
+# 5. 推理测试
+python scripts/infer_onnx.py --model model.onnx --audio data/audio/Chart.mp3 --device cuda
